@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>new post</title>
+    <style type="text/css">
+    h2 {
+        text-align: center;
+    }
+    
+    .post-title {
+        font-size: 24px;
+        text-align: left;
+    }
+    
+    .post-date {
+        font-size: 12px;
+        float: right;
+    }
+    </style>
+</head>
+
+<body>
+    <h2>CS253 blog</h2>
+    <h3>new post</h3>
+    <form method="post">
+        <label>
+            <div class="subject">
+                <div>subject</div>
+                <input type="text" name="subject">
+            </div>
+        </label>
+        <label>
+            <div class="content">
+                <div>blog</div>
+                <textarea name="content"></textarea>
+            </div>
+        </label>
+        <div class="error">{{error}}</div>
+        <input type="submit">
+    </form>
+</body>
+
+</html>

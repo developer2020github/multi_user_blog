@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User signup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h2>Signeup</h2>
+    <form method="post">
+        <div>
+            <label>
+                Username
+                <input type="text" name="username">
+            </label>
+        </div>
+        <div>
+            <label>
+                Password
+                <input type="password" name="password">
+            </label>
+        </div>
+        <div>
+            <label>
+                Verify password
+                <input type="password" name ="verify">
+            </label>
+        </div>
+        <div>
+            <label>
+                Email(optional)
+                <input type="text" name="email">
+            </label>
+        </div>
+        <input type="submit">
+        <div class = "error-display">
+         {{error}}
+        </div>
+        <div>
+            <span>Already have user name  and password?</span><span><a href="/login">Log in</a></span>
+        </div>
+    </form>
+</body>
+
+</html>
