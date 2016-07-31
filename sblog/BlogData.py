@@ -17,6 +17,7 @@
 from google.appengine.ext import db
 from UserData import User
 import HashLib
+import logging
 
 class BlogData():
     blog_kind = "sblog"
@@ -34,9 +35,14 @@ class BlogData():
         users_parent = db.Key.from_path(cls.blog_kind, cls.blog_name)
         return users_parent
 
+     #https://cloud.google.com/appengine/docs/python/datastore/gqlqueryclass
     @classmethod
     def user_exists(cls, user_name):
-        return False
+        # http://stackoverflow.com/questions/727410/how-do-i-write-to-the-console-in-google-app-engine
+        logging.debug("something I want to log from user_exists")
+        q = User.gql("WHERE user_name = " + "'" + user_name + "'")
+        user = q.get()
+        return user
 
     @classmethod
     def add_new_user(cls, new_user_name, new_password,  new_email=""):
@@ -51,5 +57,11 @@ class BlogData():
 
     @classmethod
     def user_password_ok(cls, user_name, password):
+        user = cls.user_exists(user_name)
+
+        if user:
+            if HashLib.valid_pw(user_name, password, user.password_hash):
+                return True
+
         return False
 

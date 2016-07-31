@@ -25,7 +25,7 @@ def make_pw_hash(name, pw, salt = ""):
     return (str(h)) + DIVIDER + salt
 
 
-# validates password based on provided user name, passwot and hash value
+# validates password based on provided user name, password and hash value
 # where hash value ==  hash(pws + salt) + divider + salt
 def valid_pw(name, pw, h):
     salt = h.split(DIVIDER)[1]

@@ -52,15 +52,26 @@ print valid_pw('spez', 'hunter2', h)
 try using bcrypt
 ===================
 '''
+from BlogData import BlogData
+import HashLib
+
 
 class LogInHandler(Handler):
 
     def get(self):
         self.render("login.html")
 
-
     def post(self):
-        username=self.request.get("username")
+        user_name = self.request.get("username")
         password = self.request.get("password")
 
-        self.redirect("/welcome")
+        if BlogData.user_exists(user_name) is None:
+            self.render("login.html", username_error_message="Error: user name " + user_name + " does not exist")
+            return
+
+        if BlogData.user_password_ok(user_name, password):
+            self.response.headers.add_header("Set-Cookie", "user_id=%s" % str(HashLib.make_secure_cookie(user_name)))
+            self.redirect("/welcome")
+        else:
+            self.render("login.html", password_error_message="Error: wrong password")
+            return

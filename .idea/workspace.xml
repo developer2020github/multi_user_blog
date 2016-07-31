@@ -3,12 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="43380c26-5eab-43c5-8c2a-31adf69de6a9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/BlogData.py" afterPath="$PROJECT_DIR$/sblog/BlogData.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/Handler.py" afterPath="$PROJECT_DIR$/sblog/Handler.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/HashLib.py" afterPath="$PROJECT_DIR$/sblog/HashLib.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/SignUpHandler.py" afterPath="$PROJECT_DIR$/sblog/SignUpHandler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/WelcomeHandler.py" afterPath="$PROJECT_DIR$/sblog/WelcomeHandler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/index.yaml" afterPath="$PROJECT_DIR$/sblog/index.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/templates/signup.html" afterPath="$PROJECT_DIR$/sblog/templates/signup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/LogInHandler.py" afterPath="$PROJECT_DIR$/sblog/LogInHandler.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/templates/login.html" afterPath="$PROJECT_DIR$/sblog/templates/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/templates/main.html" afterPath="$PROJECT_DIR$/sblog/templates/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="p2_multi_user_blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,21 +34,19 @@
       <file leaf-file-name="sblog_main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/sblog_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1010" max-vertical-offset="1602">
-              <caret line="88" column="11" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="902" max-vertical-offset="1602">
+              <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostsData.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sblog/PostsData.py">
+      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sblog/templates/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="936">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="0" selection-end-line="17" selection-end-column="48" />
-              <folding>
-                <element signature="e#108#143#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-3.925926" vertical-offset="56" max-vertical-offset="666">
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -57,8 +54,8 @@
       <file leaf-file-name="UserData.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/UserData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
-              <caret line="8" column="8" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="288">
+              <caret line="7" column="12" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -67,8 +64,8 @@
       <file leaf-file-name="HashLib.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/HashLib.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="542" max-vertical-offset="1224">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="254" max-vertical-offset="1224">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <element signature="e#19#32#0" expanded="true" />
               </folding>
@@ -76,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlogData.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BlogData.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/BlogData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6655405" vertical-offset="416" max-vertical-offset="1098">
-              <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="506" max-vertical-offset="1314">
+              <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
               <folding>
                 <element signature="e#750#785#0" expanded="true" />
               </folding>
@@ -91,7 +88,7 @@
       <file leaf-file-name="NewPostHandler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/NewPostHandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
+            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="288">
               <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
               <folding />
             </state>
@@ -101,8 +98,8 @@
       <file leaf-file-name="SignUpHandler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/SignUpHandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="537" max-vertical-offset="1116">
-              <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="524" max-vertical-offset="1116">
+              <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="112" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -110,26 +107,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="welcome.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sblog/templates/welcome.html">
+      <file leaf-file-name="LogInHandler.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sblog/LogInHandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="378">
-              <caret line="8" column="20" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="26" />
+            <state vertical-scroll-proportion="-0.8817568" vertical-offset="594" max-vertical-offset="1494">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WelcomeHandler.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sblog/WelcomeHandler.py">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sblog/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#27#0" expanded="true" />
-                <marker date="1469963970093" expanded="true" signature="75:343" placeholder="..." />
-                <marker date="1469963970093" expanded="true" signature="94:343" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="-6.5925927" vertical-offset="74" max-vertical-offset="666">
+              <caret line="14" column="67" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="81" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -137,7 +130,7 @@
       <file leaf-file-name="signup.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/templates/signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.333333" vertical-offset="216" max-vertical-offset="936">
+            <state vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="936">
               <caret line="26" column="70" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="91" />
               <folding />
             </state>
@@ -153,7 +146,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/sblog/RecentPostsHandler.py" />
-        <option value="$PROJECT_DIR$/sblog/templates/main.html" />
         <option value="$PROJECT_DIR$/sblog/SignupHandler.py" />
         <option value="$PROJECT_DIR$/sblog/templates/welcome.html" />
         <option value="$PROJECT_DIR$/sblog/LogOutHandler.py" />
@@ -165,14 +157,16 @@
         <option value="$PROJECT_DIR$/sblog/test_module.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/sblog/PostsData.py" />
-        <option value="$PROJECT_DIR$/sblog/LogInHandler.py" />
         <option value="$PROJECT_DIR$/sblog/templates/signup.html" />
         <option value="$PROJECT_DIR$/sblog/Handler.py" />
-        <option value="$PROJECT_DIR$/sblog/HashLib.py" />
         <option value="$PROJECT_DIR$/sblog/WelcomeHandler.py" />
         <option value="$PROJECT_DIR$/sblog/UserData.py" />
         <option value="$PROJECT_DIR$/sblog/SignUpHandler.py" />
+        <option value="$PROJECT_DIR$/sblog/templates/login.html" />
+        <option value="$PROJECT_DIR$/sblog/HashLib.py" />
         <option value="$PROJECT_DIR$/sblog/BlogData.py" />
+        <option value="$PROJECT_DIR$/sblog/templates/main.html" />
+        <option value="$PROJECT_DIR$/sblog/LogInHandler.py" />
       </list>
     </option>
   </component>
@@ -477,7 +471,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -585,9 +579,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="236" max-vertical-offset="1620">
           <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-          <folding>
-            <element signature="e#2119#2133#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -692,9 +684,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2119#2133#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -752,13 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sblog/templates/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="648">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sblog/LogOutHandler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
@@ -777,15 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="592">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sblog/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="666">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -793,7 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="270">
           <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -801,15 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
           <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sblog/LogInHandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="686" max-vertical-offset="1278">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -827,11 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
           <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-            <marker date="1469963970093" expanded="true" signature="75:343" placeholder="..." />
-            <marker date="1469963970093" expanded="true" signature="94:343" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -839,41 +798,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="378">
           <caret line="8" column="20" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sblog/sblog_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1010" max-vertical-offset="1602">
-          <caret line="88" column="11" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sblog/HashLib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="542" max-vertical-offset="1224">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="e#19#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sblog/NewPostHandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sblog/UserData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -887,10 +811,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sblog/HashLib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="254" max-vertical-offset="1224">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#19#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sblog/UserData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sblog/templates/signup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.333333" vertical-offset="216" max-vertical-offset="936">
+        <state vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="936">
           <caret line="26" column="70" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sblog/NewPostHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -898,7 +848,7 @@
     <entry file="file://$PROJECT_DIR$/sblog/SignUpHandler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="537" max-vertical-offset="1116">
-          <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="112" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
@@ -907,11 +857,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sblog/BlogData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6655405" vertical-offset="416" max-vertical-offset="1098">
-          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="506" max-vertical-offset="1314">
+          <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
           <folding>
             <element signature="e#750#785#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sblog/sblog_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="902" max-vertical-offset="1602">
+          <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sblog/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5925927" vertical-offset="74" max-vertical-offset="666">
+          <caret line="14" column="67" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sblog/templates/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.925926" vertical-offset="56" max-vertical-offset="666">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sblog/LogInHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8817568" vertical-offset="594" max-vertical-offset="1494">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
