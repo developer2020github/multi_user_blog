@@ -37,20 +37,27 @@ def valid_pw(name, pw, h):
 
 #following functions are to be used for coockie hashing
 SECRET = 'imsosecret'
+
+
+
 def hash_str(s):
     return hmac.new(SECRET, s).hexdigest()
 
+
 def make_secure_val(s):
     return s + DIVIDER + hash_str(s)
+
 
 def check_secure_val(h):
     val = h.split(DIVIDER)[0]
     if h == make_secure_val(val):
         return val
+    return None
 
 
 def make_secure_cookie(s):
     return make_secure_val(s)
+
 
 def is_cookie_secure(cookie):
     return check_secure_val(cookie)
