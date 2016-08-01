@@ -16,6 +16,9 @@
 
 from google.appengine.ext import db
 from UserData import User
+from PostsData import Post
+
+
 import HashLib
 import logging
 
@@ -47,13 +50,25 @@ class BlogData():
     @classmethod
     def add_new_user(cls, new_user_name, new_password,  new_email=""):
         if BlogData.user_exists(new_user_name):
-            return False
+            return None
 
         pw_hash = HashLib.make_pw_hash(new_user_name, new_password)
         new_user = User(parent=BlogData.get_users_parent(), user_name=new_user_name,
                         password_hash=pw_hash, email=new_email)
         new_user.put()
-        return True
+        return new_user
+
+    @classmethod
+    def add_new_post(cls, subject, content, user_name):
+        new_post = Post(parent=cls.get_posts_parent(), subject=subject, content=content, user_name=user_name)
+        new_post.put()
+        return new_post
+
+    @classmethod
+    def get_post_by_id(cls, post_id):
+        logging.debug("something I want to log from get_post_by_id")
+        post = Post.get_by_id(int(post_id), parent=cls.get_posts_parent())
+        return post
 
     @classmethod
     def user_password_ok(cls, user_name, password):
