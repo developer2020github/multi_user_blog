@@ -1,9 +1,11 @@
-from Handler import Handler 
+from google.appengine.ext import db
+from Handler import Handler
 
 
 class RecentPostsHandler(Handler):
     def get(self):
-        self.render("recent_posts.html")
+        posts = db.GqlQuery("SELECT * FROM Post ORDER BY created DESC LIMIT 10")
+        self.render("recent_posts.html", posts=posts)
 
 '''
 class FrontPageHandler(Handler):
