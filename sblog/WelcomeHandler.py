@@ -4,11 +4,10 @@ import HashLib
 
 class WelcomeHandler(Handler):
     def get(self):
-        user_id_cookie = self.request.cookies.get("user_id")
-        user_id = HashLib.is_cookie_secure(user_id_cookie)
-
-        if user_id:
-            self.render("welcome.html", username=user_id)
-        else:
+        user_id = HashLib.get_secure_cookie_value(self, "user_id")
+        if user_id is None:
             self.redirect("/login")
+        else:
+            self.render("welcome.html", username=user_id)
+
 
