@@ -65,5 +65,7 @@ def is_cookie_secure(cookie):
 
 def get_secure_cookie_value(request_object, cookie_name):
     cookie = request_object.request.cookies.get(cookie_name)
+    if cookie is None:
+        return None
     secure_cookie_value = is_cookie_secure(cookie)
     return secure_cookie_value

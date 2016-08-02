@@ -3,4 +3,5 @@ from Handler import Handler
 
 class LogOutHandler(Handler):
     def get(self):
-        self.redirect("/")
+        self.response.headers.add_header("Set-Cookie", "user_id=; Path=/")
+        self.redirect("/signeup")
