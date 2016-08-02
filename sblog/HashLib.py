@@ -61,3 +61,9 @@ def make_secure_cookie(s):
 
 def is_cookie_secure(cookie):
     return check_secure_val(cookie)
+
+
+def get_secure_cookie_value(request_object, cookie_name):
+    cookie = request_object.request.cookies.get(cookie_name)
+    secure_cookie_value = is_cookie_secure(cookie)
+    return secure_cookie_value
