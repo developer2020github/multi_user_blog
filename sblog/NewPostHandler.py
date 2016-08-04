@@ -2,6 +2,7 @@ from Handler import Handler
 from BlogData import BlogData
 import HashLib
 
+
 class NewPostHandler(Handler):
     def get(self):
         self.render("new_post.html")
