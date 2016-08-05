@@ -75,6 +75,24 @@ class BlogData():
         return post
 
     @classmethod
+    def get_post_idx_in_a_list(cls, list_of_posts, post_id):
+
+        for idx, post in enumerate(list_of_posts):
+            if post.key().id() == post_id:
+                return idx
+
+        return None
+
+
+    @classmethod
+    def set_post_error_message(cls, list_of_posts, post_id, error_message):
+        post_idx = cls.get_post_idx_in_a_list(list_of_posts, post_id)
+
+        if post_idx is not None:
+            list_of_posts[post_idx].error_message = error_message
+
+
+    @classmethod
     def user_password_ok(cls, user_name, password):
         user = cls.user_exists(user_name)
 

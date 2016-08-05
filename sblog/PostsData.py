@@ -18,6 +18,7 @@ class Post(db.Model):
     user_name = db.StringProperty(required=True)
     url = db.StringProperty(required=False)
     number_of_likes = db.IntegerProperty(required=True)
+    error_message = db.StringProperty(required=False, default="")
 
     @staticmethod
     def is_valid_post(subject, content, user_name):
@@ -25,6 +26,7 @@ class Post(db.Model):
             return True
 
         return False
+
 
 
 

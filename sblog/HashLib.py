@@ -69,3 +69,11 @@ def get_secure_cookie_value(request_object, cookie_name):
         return None
     secure_cookie_value = is_cookie_secure(cookie)
     return secure_cookie_value
+
+
+def check_user_name_cookie(request_object, redirect_to_in_case_of_error, username_cookie_name = "user_id"):
+    user_name = get_secure_cookie_value(request_object, username_cookie_name)
+    if user_name is None:
+        request_object.redirect(redirect_to_in_case_of_error)
+
+    return user_name

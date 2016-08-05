@@ -20,6 +20,7 @@
 </head>
 <body>
 <h2>CS253 blog</h2>
+<h2>{{misc_data}}</h2>
 
 {% for post in posts %}
 <div class="post">
@@ -48,6 +49,7 @@
             <input type="hidden" name="unliked_post_idx" value={{post.key().id()}}>
         <input type="submit" value="Unlike" />
         </form>
+        <span>eror mesaage {{post.error_message}}</span>
     </div>
 </div>
 <hr>
