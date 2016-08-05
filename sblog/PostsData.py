@@ -17,6 +17,7 @@ class Post(db.Model):
     last_modified = db.DateTimeProperty(auto_now_add=True)
     user_name = db.StringProperty(required=True)
     url = db.StringProperty(required=False)
+    number_of_likes = db.IntegerProperty(required=True)
 
     @staticmethod
     def is_valid_post(subject, content, user_name):

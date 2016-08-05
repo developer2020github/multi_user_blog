@@ -39,7 +39,11 @@
     <div>
         <a href="{{post.url}}">add comment</a>
         <a href="{{post.url}}">0 comments</a>
-        <span>0 likes</span>
+        <span>{{post.number_of_likes}} likes</span>
+        <form action="" method="post">
+            <input type="hidden" name="liked_post_idx" value={{post.key().id()}}>
+        <input type="submit" value="Like" />
+        </form>
     </div>
 </div>
 <hr>

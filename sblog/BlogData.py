@@ -60,7 +60,9 @@ class BlogData():
 
     @classmethod
     def add_new_post(cls, subject, content, user_name):
-        new_post = Post(parent=cls.get_posts_parent(), subject=subject, content=content, user_name=user_name)
+        new_post = Post(parent=cls.get_posts_parent(),
+                        subject=subject, content=content,
+                        user_name=user_name, number_of_likes=0)
         new_post.put()
         new_post.url = "/recentposts/" + str(new_post.key().id())
         new_post.put()
