@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>New comment</title>
+</head>
+<body>
+<h2>{{post_subject}}</h2>
+<div>{{post_content}}</div>
+<div>
+    <a href="/recentposts">Read recent posts</a>
+    <a href="/logout">Log out</a>
+    <a href="/newpost">Add new post</a>
+</div>
+
+<h3>new comment</h3>
+    <form method="post">
+        <label>
+            <div class="subject">
+                <div>subject</div>
+                <input type="text" name="subject">
+            </div>
+        </label>
+        <label>
+            <div class="content">
+                <div>blog</div>
+                <textarea name="content"></textarea>
+            </div>
+        </label>
+        <div class="error">{{error}}</div>
+        <input type="submit">
+    </form>
+</body>
+</html>

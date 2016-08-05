@@ -62,9 +62,12 @@ class BlogData():
     def add_new_post(cls, subject, content, user_name):
         new_post = Post(parent=cls.get_posts_parent(),
                         subject=subject, content=content,
-                        user_name=user_name, number_of_likes=0)
+                        user_name=user_name, number_of_likes=0,
+                        number_of_comments=0,
+                        parent_post_idx=-1)
         new_post.put()
         new_post.url = "/recentposts/" + str(new_post.key().id())
+        new_post.new_comment_url = "/newcomment/" + str(new_post.key().id())
         new_post.put()
         return new_post
 

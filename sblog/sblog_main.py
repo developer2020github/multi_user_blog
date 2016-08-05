@@ -67,6 +67,8 @@ from NewPostHandler import NewPostHandler
 from LogOutHandler import LogOutHandler
 from LogInHandler import LogInHandler
 from CurrentPostHandler import CurrentPostHandler
+from NewCommentHandler import NewCommentHandler
+
 
 class MainPageHandler(Handler):
 
@@ -88,5 +90,6 @@ app = webapp2.WSGIApplication([
     ("/newpost", NewPostHandler),
     ("/login", LogInHandler),
     ("/logout", LogOutHandler),
-    ('/recentposts/([0-9]+)', CurrentPostHandler)
+    ('/recentposts/([0-9]+)', CurrentPostHandler),
+    ('/newcomment/([0-9]+)', NewCommentHandler)
 ], debug=True)

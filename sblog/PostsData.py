@@ -17,8 +17,15 @@ class Post(db.Model):
     last_modified = db.DateTimeProperty(auto_now_add=True)
     user_name = db.StringProperty(required=True)
     url = db.StringProperty(required=False)
+    new_comment_url = db.StringProperty(required=False)
     number_of_likes = db.IntegerProperty(required=True)
     error_message = db.StringProperty(required=False, default="")
+    number_of_comments = db.IntegerProperty(required=False)
+
+    # comments ar posts as well, so use same class for comments.
+    # parent post is an index of parent posts for comments.
+    # if parent_post idx is -1 - this is a root post
+    parent_post_idx = db.IntegerProperty(required=True)
 
     @staticmethod
     def is_valid_post(subject, content, user_name):

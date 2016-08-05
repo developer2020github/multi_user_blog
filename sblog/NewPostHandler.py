@@ -8,11 +8,6 @@ class NewPostHandler(Handler):
         self.render("new_post.html")
 
     def post(self):
-        p_key = 99
-        #self.redirect('/recentposts/%s' % str(p.key().id()))
-        self.redirect('/recentposts/%s' % str(p_key))
-
-    def post(self):
         subject = self.request.get("subject")
         content = self.request.get("content")
         user_name = HashLib.get_secure_cookie_value(self, "user_id")
