@@ -9,7 +9,7 @@ class RecentPostsHandler(Handler):
 
     def get(self):
         if RecentPostsHandler.current_posts is None:
-            posts = db.GqlQuery("SELECT * FROM Post ORDER BY created DESC LIMIT 10")
+            posts = RecentPostsHandler.get_list_of_posts_from_database()
         else:
             posts = RecentPostsHandler.current_posts
 
@@ -32,6 +32,13 @@ class RecentPostsHandler(Handler):
 
         return False
 
+    @staticmethod
+    def get_list_of_posts_from_database():
+        query = "SELECT * FROM Post WHERE parent_post_idx =-1 ORDER BY created DESC LIMIT 10"
+        list_of_posts = list(db.GqlQuery(query))
+        return list_of_posts
+
+
     def post(self):
         user_name = HashLib.check_user_name_cookie(self, "/login")
         if user_name is None:
@@ -39,7 +46,7 @@ class RecentPostsHandler(Handler):
 
         liked_post_idx_string = self.request.get("liked_post_idx").strip()
         unliked_post_idx_string = self.request.get("unliked_post_idx").strip()
-        posts = list(db.GqlQuery("SELECT * FROM Post ORDER BY created DESC LIMIT 10"))
+        posts = RecentPostsHandler.get_list_of_posts_from_database()
         self.update_likes(posts,  "Error: cannot like your own posts",
                           liked_post_idx_string, user_name, lambda x: x + 1)
 

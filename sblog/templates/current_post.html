@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <title>Current post</title>
 </head>
+
 <body>
-<h2>{{post_subject}}</h2>
-<div>{{post_content}}</div>
-<div>
-    <a href="/recentposts">Read recent posts</a>
-    <a href="/logout">Log out</a>
-    <a href="/newpost">Add new post</a>
-</div>
+    <h2>{{post_subject}}</h2>
+    <h3>miscdebug_info</h3>
+    <div>{{post_content}}</div>
+    <div>
+        <a href="/recentposts">Read recent posts</a>
+        <a href="/logout">Log out</a>
+    </div>
+    <div>
+        {% for comment in comments %}
+        <div class="comment">
+            <span class="comment-title">{{comment.subject}}</span>
+            <span class="comment-date">{{comment.created}}</span>
+            <div>
+                By <span>{{comment.user_name}}</span>
+            </div>
+            <div class=comment-text>
+                <hr>
+                <p>{{comment.content}}</p>
+            </div>
+        </div>
+        <hr>
+        <hr> 
+        {% endfor %}
+    </div>
 </body>
+
 </html>

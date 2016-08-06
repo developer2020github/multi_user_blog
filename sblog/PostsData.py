@@ -26,6 +26,7 @@ class Post(db.Model):
     # parent post is an index of parent posts for comments.
     # if parent_post idx is -1 - this is a root post
     parent_post_idx = db.IntegerProperty(required=True)
+    list_of_comments_ids = db.ListProperty(item_type=int)
 
     @staticmethod
     def is_valid_post(subject, content, user_name):

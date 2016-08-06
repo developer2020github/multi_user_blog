@@ -38,8 +38,7 @@
 <p>{{post.content}}</p>
 </div>
     <div>
-        <a href="{{post.url}}">add comment</a>
-        <a href="{{post.url}}">0 comments</a>
+        <a href="{{post.url}}">{{post.number_of_comments}} comments</a>
         <span>{{post.number_of_likes}} likes</span>
         <form action="" method="post">
             <input type="hidden" name="liked_post_idx" value={{post.key().id()}}>

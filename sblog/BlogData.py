@@ -22,6 +22,10 @@ from PostsData import Post
 import HashLib
 import logging
 
+# this class handles all interactions with databases for user data,
+# posts,
+# and comments
+
 class BlogData():
     blog_kind = "sblog"
     blog_name = "root"
@@ -73,9 +77,32 @@ class BlogData():
 
     @classmethod
     def get_post_by_id(cls, post_id):
-        logging.debug("something I want to log from get_post_by_id")
         post = Post.get_by_id(int(post_id), parent=cls.get_posts_parent())
         return post
+
+    @classmethod
+    def get_comments_by_post_id(cls, post_id):
+        post = Post.get_by_id(int(post_id), parent=cls.get_posts_parent())
+        comment_ids = post.list_of_comments_ids
+        comments = Post.get_by_id(comment_ids, parent=cls.get_posts_parent())
+        return comments
+
+    @classmethod
+    def add_new_comment(cls, parent_post_id, subject, content, user_name):
+        new_comment = Post(parent=cls.get_posts_parent(),
+                           subject=subject, content=content,
+                           user_name=user_name, number_of_likes=0,
+                           number_of_comments=0,
+                           parent_post_idx=int(parent_post_id))
+
+        new_comment.put()
+        parent_post = cls.get_post_by_id(parent_post_id)
+        parent_post.list_of_comments_ids.append(new_comment.key().id())
+        parent_post.number_of_comments += 1
+        parent_post.put()
+        return new_comment
+
+
 
     @classmethod
     def get_post_idx_in_a_list(cls, list_of_posts, post_id):
