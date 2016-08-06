@@ -114,6 +114,13 @@ class BlogData():
 
         return None
 
+    @classmethod
+    def delete_post_by_id(cls, post_id):
+        post = cls.get_post_by_id(post_id)
+        for comment_id in post.list_of_comments_ids:
+            comment = cls.get_post_by_id(comment_id)
+            comment.delete()
+        post.delete()
 
     @classmethod
     def set_post_error_message(cls, list_of_posts, post_id, error_message):

@@ -12,17 +12,21 @@
         <label>
             <div class="subject">
                 <div>subject</div>
-                <input type="text" name="subject">
+                <input type="text" name="subject" value="{{post.subject}}">
             </div>
         </label>
         <label>
             <div class="content">
                 <div>blog</div>
-                <textarea name="content"></textarea>
+                <textarea name="content">{{post.content}}</textarea>
             </div>
         </label>
         <div class="error">{{error}}</div>
         <input type="submit">
+    </form>
+    <form action="" method="post">
+            <input type="hidden" name="delete_post_idx" value={{post.key().id()}}>
+        <input type="submit" value="Delete" />
     </form>
 </body>
 

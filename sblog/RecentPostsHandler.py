@@ -38,7 +38,6 @@ class RecentPostsHandler(Handler):
         list_of_posts = list(db.GqlQuery(query))
         return list_of_posts
 
-
     def post(self):
         user_name = HashLib.check_user_name_cookie(self, "/login")
         if user_name is None:
