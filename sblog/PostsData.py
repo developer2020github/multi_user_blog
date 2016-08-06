@@ -21,6 +21,7 @@ class Post(db.Model):
     number_of_likes = db.IntegerProperty(required=True)
     error_message = db.StringProperty(required=False, default="")
     number_of_comments = db.IntegerProperty(required=False)
+    edit_post_url = db.StringProperty(required=False)
 
     # comments ar posts as well, so use same class for comments.
     # parent post is an index of parent posts for comments.

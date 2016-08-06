@@ -58,7 +58,7 @@ takes to main page
 
 '''
 import webapp2
-import jinja2
+
 from Handler import Handler
 from RecentPostsHandler import RecentPostsHandler
 from SignUpHandler import SignUpHandler
@@ -68,6 +68,7 @@ from LogOutHandler import LogOutHandler
 from LogInHandler import LogInHandler
 from CurrentPostHandler import CurrentPostHandler
 from NewCommentHandler import NewCommentHandler
+from EditPostHandler import EditPostHandler
 
 
 class MainPageHandler(Handler):
@@ -91,5 +92,6 @@ app = webapp2.WSGIApplication([
     ("/login", LogInHandler),
     ("/logout", LogOutHandler),
     ('/recentposts/([0-9]+)', CurrentPostHandler),
-    ('/newcomment/([0-9]+)', NewCommentHandler)
+    ('/newcomment/([0-9]+)', NewCommentHandler),
+    ('/editpost/([0-9]+)', EditPostHandler)
 ], debug=True)
