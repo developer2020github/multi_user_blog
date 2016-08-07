@@ -1,32 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <link type="text/css" rel="stylesheet" href="/static/sblog.css" />
     </head>
     <body>
-        <h1>Mutiuser blog</h1>
-        <a href="/recentposts">Read recent posts</a>
-        <a href="/signeup">Sign up</a>
-        <a href="/login">log in</a>
-        <h2>Login</h2>
-    <form method="post">
-        <div>
-            <label>
-                Username
-                <input type="text" name="username">
-            </label>
+        <div class = main-header>
+            <h1>S-blog</h1>
         </div>
-        <div>
-            <label>
-                Password
-                <input type="password" name="password">
-            </label>
+        <div class = main-buttons>
+        <a class = "link-button" href="/recentposts">Read recent posts</a>
+        <a class = "link-button" href="/signeup">Sign up</a>
+        <a class=  "link-button" href="/login">log in</a>
         </div>
-        <input type="submit">
-        <div class = "error-display">
-         {{error}}
-        </div>
-    </form>
     </body>
 
 </html>

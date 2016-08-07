@@ -1,0 +1,23 @@
+body{
+ color: #07E60C;
+ background: #282525;
+ font-family: Arial, sans-serif;
+ font-size: 14px;
+}
+
+.link-button{
+    background-color: #928E8E;
+    color: #F6F86D;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+.main-header{
+    text-align: center;
+}
+
+.main-buttons{
+    text-align: center; 
+}
