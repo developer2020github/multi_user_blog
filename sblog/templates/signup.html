@@ -4,41 +4,38 @@
 <head>
     <title>User signup</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="/static/sblog.css" />
 </head>
 
 <body>
-    <h2>Signeup</h2>
+    <h2>S-blog Signeup</h2>
     <form method="post">
         <div>
-            <label>
-                Username
+                <span class="form-input-tag">Username:</span>
                 <input type="text" name="username"><span>{{username_error_message}}</span>
-            </label>
         </div>
         <div>
-            <label>
-                Password
+                <span class="form-input-tag">Password:</span>
                 <input type="password" name="password"><span>{{password_error_message}}</span>
-            </label>
         </div>
         <div>
-            <label>
-                Verify password
+                <span class="form-input-tag">Verify password:</span>
                 <input type="password" name ="verify"><span>{{verify_password_error_message}}</span>
-            </label>
         </div>
         <div>
-            <label>
-                Email(optional)
+                <span class="form-input-tag">Email(optional):</span>
                 <input type="text" name="email">
-            </label>
         </div>
-        <input type="submit">
+        <div>
+         <span class="form-input-tag"></span>
+         <input class="submit-button" type="submit">
+        </div>
         <div class = "error-display">
          {{error}}
         </div>
-        <div>
-            <span>Already have user name  and password?</span><span><a href="/login">Log in</a></span>
+        <div class="form-separate-input">
+            <span class="form-input-tag-separate">Already have user name  and password?</span>
+            <span><a class="link-button-form" href="/login">Log in</a></span>
         </div>
     </form>
 </body>

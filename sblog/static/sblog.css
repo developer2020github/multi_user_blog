@@ -21,3 +21,39 @@ body{
 .main-buttons{
     text-align: center; 
 }
+
+.form-input-tag{
+    width: 10em;
+    display: inline-block;
+    text-align: right;
+}
+
+.form-separate-input{
+    padding-top: 5px;
+}
+
+.submit-button{
+    background-color: #928E8E;
+    color: #F6F86D;
+    padding: 5px 66px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+    border:none;
+}
+
+.link-button-form{
+    background-color: #928E8E;
+    color: #F6F86D;
+    padding: 5px 66px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+.form-input-tag-separate{
+    width: 10em;
+    display: inline-block;
+    vertical-align: bottom;
+}
