@@ -3,42 +3,34 @@
 
 <head>
     <title>new post</title>
-    <style type="text/css">
-    h2 {
-        text-align: center;
-    }
-    
-    .post-title {
-        font-size: 24px;
-        text-align: left;
-    }
-    
-    .post-date {
-        font-size: 12px;
-        float: right;
-    }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="/static/sblog.css" />
 </head>
 
 <body>
-    <h2>CS253 blog</h2>
-    <h3>new post</h3>
-    <form method="post">
-        <label>
-            <div class="subject">
-                <div>subject</div>
-                <input type="text" name="subject">
-            </div>
-        </label>
-        <label>
-            <div class="content">
-                <div>blog</div>
-                <textarea name="content"></textarea>
-            </div>
-        </label>
-        <div class="error">{{error}}</div>
-        <input type="submit">
-    </form>
+    <div>
+        <span class="left-header">S-blog</span><span class="right-header">logged in as {{logged_in_name}}</span>
+    </div>
+
+    <p>
+        new post
+        <form method="post">
+            <label>
+                <div class="subject">
+                    <div>subject</div>
+                    <input type="text" name="subject">
+                </div>
+            </label>
+            <label>
+                <div class="content">
+                    <div>blog</div>
+                    <textarea name="content"></textarea>
+                </div>
+            </label>
+            <div class="error">{{error}}</div>
+            <input type="submit">
+        </form>
+    </p>
 </body>
 
 </html>

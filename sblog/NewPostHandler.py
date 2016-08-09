@@ -5,7 +5,14 @@ import HashLib
 
 class NewPostHandler(Handler):
     def get(self):
-        self.render("new_post.html")
+
+        user_name = HashLib.get_secure_cookie_value(self, "user_id")
+        logged_in_name = "guest"
+        if user_name is not None:
+            logged_in_name = user_name
+
+        self.render("new_post.html", logged_in_name=logged_in_name)
+
 
     def post(self):
         subject = self.request.get("subject")
@@ -19,4 +26,4 @@ class NewPostHandler(Handler):
             self.redirect('/recentposts/%s' % str(post.key().id()))
         else:
             error = "Error: need both content and subject"
-            self.render("new_post.html", error=error)
+            self.render("new_post.html", error=error, logged_in_name=user_name)
