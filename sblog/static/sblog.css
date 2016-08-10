@@ -61,8 +61,20 @@ body{
 .left-header{
     font-size: 2em;
     text-align: left;
+    float: left;
 }
 
 .right-header{
     text-align: right;
+    background-color: #B8A9A9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: right;
+    
 }
+
+.header-with-username{
+    width: 100%;
+    height: 3em;
+}
+

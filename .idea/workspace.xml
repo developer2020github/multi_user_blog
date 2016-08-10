@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43380c26-5eab-43c5-8c2a-31adf69de6a9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/NewPostHandler.py" afterPath="$PROJECT_DIR$/sblog/NewPostHandler.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/templates/new_post.html" afterPath="$PROJECT_DIR$/sblog/templates/new_post.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/static/sblog.css" afterPath="$PROJECT_DIR$/sblog/static/sblog.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="p2_multi_user_blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,8 +63,8 @@
       <file leaf-file-name="sblog.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/static/sblog.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="702" max-vertical-offset="1152">
-              <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1098" max-vertical-offset="1548">
+              <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -102,7 +103,7 @@
       <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/templates/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="414">
+            <state vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="414">
               <caret line="13" column="32" selection-start-line="11" selection-start-column="0" selection-end-line="13" selection-end-column="57" />
               <folding />
             </state>
@@ -201,6 +202,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -289,7 +291,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -516,7 +517,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19472913" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -858,7 +859,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1262" max-vertical-offset="1854">
           <caret line="87" column="5" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="19" />
           <folding>
-            <element signature="e#2119#2133#0" expanded="true" />
+            <element signature="e#2119#2133#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -925,15 +926,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sblog/static/sblog.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="666" max-vertical-offset="810">
-          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1098" max-vertical-offset="1548">
+          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sblog/templates/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="414">
+        <state vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="414">
           <caret line="13" column="32" selection-start-line="11" selection-start-column="0" selection-end-line="13" selection-end-column="57" />
           <folding />
         </state>
