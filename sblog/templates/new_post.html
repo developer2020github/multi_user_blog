@@ -17,16 +17,12 @@
         new post
         <form method="post">
             <label>
-                <div class="subject">
                     <div>subject</div>
-                    <input type="text" name="subject">
-                </div>
+                    <input type="text" class="post-subject" name="subject">
             </label>
             <label>
-                <div class="content">
                     <div>blog</div>
-                    <textarea name="content"></textarea>
-                </div>
+                    <textarea name="content" class="post-content" ></textarea>
             </label>
             <div class="error">{{error}}</div>
             <input type="submit">
