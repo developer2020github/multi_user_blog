@@ -22,7 +22,11 @@ body{
     text-align: center; 
 }
 
-
+.error{
+    font-size: 22px;
+    font-weight: bold;
+    color: #FD5503;
+}
 
 .form-input-tag{
     width: 10em;
@@ -34,7 +38,7 @@ body{
     padding-top: 5px;
 }
 
-.submit-button{
+.submit-button, .submit-new-post-button{
     background-color: #928E8E;
     color: #F6F86D;
     padding: 5px 66px;
@@ -43,6 +47,7 @@ body{
     display: inline-block;
     margin-top: 5px;
     border:none;
+    cursor: pointer;
 }
 
 .link-button-form{
@@ -66,9 +71,16 @@ body{
     float: left;
 }
 
+.center-header{
+  font-size: 2em;
+  float: right;
+  position: relative;
+  left: -50%; 
+  text-align: left;
+}
+
 .right-header{
     text-align: right;
-    background-color: #B8A9A9;
     padding-top: 10px;
     padding-bottom: 10px;
     float: right;
@@ -94,3 +106,11 @@ body{
     height: 10em;
     font-size: 16px;
 }
+
+.new-post-headline{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 32px;
+    margin-bottom: 5px;
+}
+

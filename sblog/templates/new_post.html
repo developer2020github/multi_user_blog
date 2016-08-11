@@ -10,23 +10,24 @@
 <body>
     <div class="header-with-username">
         <span class="left-header">S-blog</span>
+        <span class = "center-header">New post</span>
         <span class="right-header">logged in as {{logged_in_name}}</span>
     </div>
 
     <div>
-        new post
+        <h3></h3>
         <form method="post">
             <label>
-                    <div>subject</div>
+                    <div class="new-post-headline">Subject:</div>
                     <input type="text" class="post-subject" name="subject">
             </label>
             <label>
-                    <div>blog</div>
+                    <div  class="new-post-headline">Post:</div>
                     <textarea name="content" class="post-content" ></textarea>
             </label>
-            <div class="error">{{error}}</div>
-            <input type="submit">
+            <input class ="submit-new-post-button" type="submit">
         </form>
+        <div class="error">{{error}}</div>
     </div>
 </body>
 
