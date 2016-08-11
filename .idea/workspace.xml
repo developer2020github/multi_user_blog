@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43380c26-5eab-43c5-8c2a-31adf69de6a9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/Handler.py" afterPath="$PROJECT_DIR$/sblog/Handler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/NewPostHandler.py" afterPath="$PROJECT_DIR$/sblog/NewPostHandler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/RecentPostsHandler.py" afterPath="$PROJECT_DIR$/sblog/RecentPostsHandler.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/BlogData.py" afterPath="$PROJECT_DIR$/sblog/BlogData.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/PostsData.py" afterPath="$PROJECT_DIR$/sblog/PostsData.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/static/sblog.css" afterPath="$PROJECT_DIR$/sblog/static/sblog.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/templates/recent_posts.html" afterPath="$PROJECT_DIR$/sblog/templates/recent_posts.html" />
     </list>
@@ -26,25 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EditPostHandler.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sblog/EditPostHandler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
-              <folding>
-                <element signature="e#18#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="favicon.ico" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sblog/favicon.ico">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/index.yaml">
           <provider selected="true" editor-type-id="text-editor">
@@ -60,16 +40,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
               <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sblog/templates/main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="32" selection-start-line="11" selection-start-column="0" selection-end-line="13" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -109,6 +79,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="BlogData.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sblog/BlogData.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="75" column="27" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="HashLib.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/HashLib.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -121,11 +101,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecentPostsHandler.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RecentPostsHandler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/RecentPostsHandler.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="197">
               <caret line="15" column="94" selection-start-line="15" selection-start-column="94" selection-end-line="15" selection-end-column="94" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_module.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sblog/test_module.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostsData.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sblog/PostsData.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="16" column="14" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -151,17 +151,14 @@
         <option value="$PROJECT_DIR$/sblog/WelcomeHandler.py" />
         <option value="$PROJECT_DIR$/sblog/LogOutHandler.py" />
         <option value="$PROJECT_DIR$/sblog/misc_test.py" />
-        <option value="$PROJECT_DIR$/sblog/test_module.py" />
         <option value="$PROJECT_DIR$/sblog/HashLib.py" />
         <option value="$PROJECT_DIR$/sblog/templates/add_comment.html" />
         <option value="$PROJECT_DIR$/sblog/templates/current_post.html" />
         <option value="$PROJECT_DIR$/sblog/CurrentPostHandler.py" />
         <option value="$PROJECT_DIR$/sblog/NewCommentHandler.py" />
         <option value="$PROJECT_DIR$/sblog/sblog_main.py" />
-        <option value="$PROJECT_DIR$/sblog/PostsData.py" />
         <option value="$PROJECT_DIR$/sblog/templates/recent_posts.html" />
         <option value="$PROJECT_DIR$/sblog/templates/edit_post.html" />
-        <option value="$PROJECT_DIR$/sblog/BlogData.py" />
         <option value="$PROJECT_DIR$/sblog/EditPostHandler.py" />
         <option value="$PROJECT_DIR$/sblog/app.yaml" />
         <option value="$PROJECT_DIR$/sblog/static/sblog.css" />
@@ -169,6 +166,9 @@
         <option value="$PROJECT_DIR$/sblog/Handler.py" />
         <option value="$PROJECT_DIR$/sblog/NewPostHandler.py" />
         <option value="$PROJECT_DIR$/sblog/RecentPostsHandler.py" />
+        <option value="$PROJECT_DIR$/sblog/test_module.py" />
+        <option value="$PROJECT_DIR$/sblog/PostsData.py" />
+        <option value="$PROJECT_DIR$/sblog/BlogData.py" />
       </list>
     </option>
   </component>
@@ -535,10 +535,10 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3550914" sideWeight="0.5025" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.058064517" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3550914" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -778,13 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sblog/test_module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sblog/LogInHandler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -827,13 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sblog/PostsData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sblog/templates/welcome.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -854,14 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="20" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sblog/BlogData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1666">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -955,6 +933,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="15" column="94" selection-start-line="15" selection-start-column="94" selection-end-line="15" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sblog/PostsData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sblog/test_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sblog/BlogData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="75" column="27" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="34" />
           <folding />
         </state>
       </provider>

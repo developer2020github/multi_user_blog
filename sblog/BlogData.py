@@ -73,6 +73,7 @@ class BlogData():
         new_post.url = "/recentposts/" + str(new_post.key().id())
         new_post.new_comment_url = "/newcomment/" + str(new_post.key().id())
         new_post.edit_post_url = "/editpost/" + str(new_post.key().id())
+        new_post.created_formatted = new_post.created.strftime("%A, %d %B %Y, at %H:%M:%S")
         new_post.put()
         return new_post
 

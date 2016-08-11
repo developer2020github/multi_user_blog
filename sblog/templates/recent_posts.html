@@ -8,46 +8,47 @@
 </head>
 
 <body>
-    <div class="header-with-username">
+    <div class="header-recent-posts">
         <span class="left-header">S-blog</span>
         <span class="center-header">Recent Posts</span>
-        <span class="right-header">logged in as {{logged_in_name}}</span>
+        <span class="right-header">
+        logged in as {{logged_in_name}}
+        <a class="link-button-low" href="/newpost">Add new post</a>
+        <a class="link-button-low" href="/logout">Log out</a>
+        </span>
     </div>
     {% for post in posts %}
-    <div class="recent-post-box">
+<div class="recent-post-box">
      
-<span class="recent-post-subject">{{post.subject}}</span>
-        <span class="post-date">{{post.created}}</span>
-      
-        <div>
-            By <span>{{post.user_name}}</span>
+<div class="recent-post-subject">{{post.subject}}</div>
+        <div class="post-date-and-author">
+            <span class="post-date">{{post.created_formatted}}</span>
+            <span class="post-author">By {{post.user_name}}</span>
         </div>
+        <hr>
         <div class=post-text>
-            <hr>
             <p>{{post.content}}</p>
         </div>
+        <hr>
         <div>
+            <span><a href="{{post.url}}">permalink</a></span>
             <a href="{{post.url}}">{{post.number_of_comments}} comments</a>
-            <span>{{post.number_of_likes}} likes</span>
-            <form action="" method="post">
-                <input type="hidden" name="liked_post_idx" value={{post.key().id()}}>
-                <input type="submit" value="Like" />
-            </form>
-            <form action="" method="post">
-                <input type="hidden" name="unliked_post_idx" value={{post.key().id()}}>
-                <input type="submit" value="Unlike" />
-            </form>
-            <span>{{post.error_message}}</span>
             <span><a href="{{post.new_comment_url}}">add comment</a></span>
             <span><a href="{{post.edit_post_url}}">edit\delete</a></span>
-            <span><a href="{{post.url}}">permalink</a></span>
+           
+            <span>{{post.number_of_likes}} likes</span>
+            <form class="like-unlike-form" action="" method="post">
+                <input type="hidden" name="liked_post_idx" value={{post.key().id()}}>
+                <input class = "like-unlike-button" type="submit" value="Like" />
+            </form>
+            <form class="like-unlike-form" action="" method="post">
+                <input type="hidden" name="unliked_post_idx" value={{post.key().id()}}>
+                <input class = "like-unlike-button" type="submit" value="Unlike" />
+            </form>
         </div>
+        <div class="error">{{post.error_message}}</div>
     </div>
     {% endfor %}
-    <div>
-        <a href="/logout">Log out</a>
-        <a href="/newpost">Add new post</a>
-    </div>
 </body>
 
 </html>

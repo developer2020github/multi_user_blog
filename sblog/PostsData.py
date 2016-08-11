@@ -14,6 +14,7 @@ class Post(db.Model):
     subject = db.StringProperty(required=True)
     content = db.TextProperty(required=True)
     created = db.DateTimeProperty(auto_now_add=True)
+    created_formatted = db.StringProperty(required=False)
     last_modified = db.DateTimeProperty(auto_now_add=True)
     user_name = db.StringProperty(required=True)
     url = db.StringProperty(required=False)
