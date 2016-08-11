@@ -24,7 +24,7 @@ a:visited {
 }
 
 .link-button-low{
-  padding: 5px 25px;
+  padding: 5px 5px;
 }
 
 .main-header {
@@ -182,4 +182,13 @@ a:visited {
     display: inline-block;
     border: none;
     cursor: pointer;
+}
+
+.comments-title{
+    font-size: 20px;
+    font-weight: bold;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    margin-bottom: 10px;
 }
