@@ -4,7 +4,7 @@
 import webapp2
 import jinja2
 import os
-
+import HashLib
 
 class Handler(webapp2.RequestHandler):
 
@@ -47,3 +47,10 @@ class Handler(webapp2.RequestHandler):
             return True
 
         return False
+
+    def get_logged_in_name(self, default_name = "Guest"):
+        user_name = HashLib.get_secure_cookie_value(self, "user_id")
+        logged_in_name = default_name
+        if user_name is not None:
+            logged_in_name = user_name
+        return logged_in_name

@@ -13,7 +13,7 @@ class RecentPostsHandler(Handler):
         else:
             posts = RecentPostsHandler.current_posts
 
-        self.render("recent_posts.html", posts=posts, misc_data=str(""))
+        self.render("recent_posts.html", posts=posts, logged_in_name=self.get_logged_in_name())
         RecentPostsHandler.current_posts = None
 
     def update_likes(self, posts, error_message, post_to_update_idx_string, user_name, likes_counter_function):

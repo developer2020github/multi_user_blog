@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43380c26-5eab-43c5-8c2a-31adf69de6a9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/p2_multi_user_blog.iml" afterPath="$PROJECT_DIR$/.idea/p2_multi_user_blog.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/Handler.py" afterPath="$PROJECT_DIR$/sblog/Handler.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/NewPostHandler.py" afterPath="$PROJECT_DIR$/sblog/NewPostHandler.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/RecentPostsHandler.py" afterPath="$PROJECT_DIR$/sblog/RecentPostsHandler.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/static/sblog.css" afterPath="$PROJECT_DIR$/sblog/static/sblog.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/templates/current_post.html" afterPath="$PROJECT_DIR$/sblog/templates/current_post.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/templates/new_post.html" afterPath="$PROJECT_DIR$/sblog/templates/new_post.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/templates/recent_posts.html" afterPath="$PROJECT_DIR$/sblog/templates/recent_posts.html" />
     </list>
     <ignored path="p2_multi_user_blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,7 +55,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.yaml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/app.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -78,8 +78,8 @@
       <file leaf-file-name="NewPostHandler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/NewPostHandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="7" column="77" selection-start-line="7" selection-start-column="77" selection-end-line="7" selection-end-column="77" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -100,9 +100,11 @@
       <file leaf-file-name="Handler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/Handler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-              <folding />
+            <state relative-caret-position="316">
+              <caret line="50" column="19" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="26" />
+              <folding>
+                <element signature="e#126#140#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,6 +117,16 @@
               <folding>
                 <element signature="e#19#32#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecentPostsHandler.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sblog/RecentPostsHandler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="15" column="94" selection-start-line="15" selection-start-column="94" selection-end-line="15" selection-end-column="94" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -132,7 +144,6 @@
         <option value="$PROJECT_DIR$/sblog/SignIn.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/sblog/templates/signup.html" />
-        <option value="$PROJECT_DIR$/sblog/Handler.py" />
         <option value="$PROJECT_DIR$/sblog/UserData.py" />
         <option value="$PROJECT_DIR$/sblog/SignUpHandler.py" />
         <option value="$PROJECT_DIR$/sblog/templates/login.html" />
@@ -148,7 +159,6 @@
         <option value="$PROJECT_DIR$/sblog/NewCommentHandler.py" />
         <option value="$PROJECT_DIR$/sblog/sblog_main.py" />
         <option value="$PROJECT_DIR$/sblog/PostsData.py" />
-        <option value="$PROJECT_DIR$/sblog/RecentPostsHandler.py" />
         <option value="$PROJECT_DIR$/sblog/templates/recent_posts.html" />
         <option value="$PROJECT_DIR$/sblog/templates/edit_post.html" />
         <option value="$PROJECT_DIR$/sblog/BlogData.py" />
@@ -156,7 +166,9 @@
         <option value="$PROJECT_DIR$/sblog/app.yaml" />
         <option value="$PROJECT_DIR$/sblog/static/sblog.css" />
         <option value="$PROJECT_DIR$/sblog/templates/main.html" />
+        <option value="$PROJECT_DIR$/sblog/Handler.py" />
         <option value="$PROJECT_DIR$/sblog/NewPostHandler.py" />
+        <option value="$PROJECT_DIR$/sblog/RecentPostsHandler.py" />
       </list>
     </option>
   </component>
@@ -368,6 +380,18 @@
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="p2_multi_user_blog" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -810,16 +834,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sblog/RecentPostsHandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#35#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sblog/templates/welcome.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -883,28 +897,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sblog/NewPostHandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sblog/sblog_main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="58" column="3" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sblog/Handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -931,6 +927,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sblog/Handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="50" column="19" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="26" />
+          <folding>
+            <element signature="e#126#140#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sblog/NewPostHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="77" selection-start-line="7" selection-start-column="77" selection-end-line="7" selection-end-column="77" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sblog/RecentPostsHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="15" column="94" selection-start-line="15" selection-start-column="94" selection-end-line="15" selection-end-column="94" />
           <folding />
         </state>
       </provider>

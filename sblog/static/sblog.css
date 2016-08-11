@@ -114,3 +114,15 @@ body{
     margin-bottom: 5px;
 }
 
+.recent-post-subject{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.recent-post-box{
+    background: #737070;
+    color: #F5EFA7;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 18px;
+}
