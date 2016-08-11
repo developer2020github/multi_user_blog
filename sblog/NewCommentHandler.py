@@ -6,7 +6,8 @@ import HashLib
 class NewCommentHandler(Handler):
     def get(self, post_id):
         post = BlogData.get_post_by_id(post_id)
-        self.render("new_comment.html", post_subject=post.subject, post_content=post.content)
+        self.render("new_comment.html", post=post,  
+                    logged_in_name=self.get_logged_in_name())
 
     def post(self, post_id):
         subject = self.request.get("subject")

@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <title>New comment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="/static/sblog.css" />
 </head>
-<body>
-<h2>{{post_subject}}</h2>
-<div>{{post_content}}</div>
-<div>
-    <a href="/recentposts">Read recent posts</a>
-    <a href="/logout">Log out</a>
-    <a href="/newpost">Add new post</a>
-</div>
 
-<h3>new comment</h3>
-    <form method="post">
-        <label>
-            <div class="subject">
-                <div>subject</div>
-                <input type="text" name="subject">
-            </div>
-        </label>
-        <label>
-            <div class="content">
-                <div>blog</div>
-                <textarea name="content"></textarea>
-            </div>
-        </label>
+<body>
+    <div class="header-with-username">
+        <span class="left-header">S-blog</span>
+        <span class="center-header"></span>
+        <span class="right-header">logged in as {{logged_in_name}}</span>
+    </div>
+    <div class="recent-post-box-full-witdth">
+        <div class="recent-post-subject">{{post.subject}}</div>
+        <div class="post-date-and-author">
+            <span class="post-date">{{post.created_formatted}}</span>
+            <span class="post-author">By {{post.user_name}}</span>
+        </div>
+        <hr>
+        <div class=post-text>
+            <p>{{post.content}}</p>
+        </div>
+    </div>
+    <div>
+        <h3>New comment:</h3>
+        <form method="post">
+            <label>
+                <div class="new-post-headline">Subject:</div>
+                <input type="text" class="post-subject" name="subject">
+            </label>
+            <label>
+                <div class="new-post-headline">Comment:</div>
+                <textarea name="content" class="post-content"></textarea>
+            </label>
+            <input class="submit-new-post-button" type="submit">
+        </form>
         <div class="error">{{error}}</div>
-        <input type="submit">
-    </form>
+    </div>
 </body>
+
 </html>
