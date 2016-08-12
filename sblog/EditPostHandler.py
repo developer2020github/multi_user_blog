@@ -7,7 +7,7 @@ import HashLib
 class EditPostHandler(Handler):
     def get(self, post_id):
         post = BlogData.get_post_by_id(post_id)
-        self.render("edit_post.html", post=post)
+        self.render("edit_post.html", post=post, logged_in_name=self.get_logged_in_name())
 
     def post(self, post_id):
         subject = self.request.get("subject")
