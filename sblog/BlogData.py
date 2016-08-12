@@ -21,6 +21,7 @@ from PostsData import Post
 
 import HashLib
 import logging
+import time
 
 # this class handles all interactions with databases for user data,
 # posts,
@@ -90,6 +91,19 @@ class BlogData():
         return comments
 
     @classmethod
+    def delete_post_by_id_with_confirmation(cls, post_id, delay_per_iteration_ms=10.0, max_number_of_delays=10):
+        # sometimes deletion takes longer than redirect.
+        # i.e, post delete page would request a deletion of the post, and then redirect to
+        # recent posts page right away.
+        # turns out database may still be updating, so post that user just deleted would still be displayed
+        # this function will wait till entry is for deleted
+        BlogData.delete_post_by_id(post_id)
+        for delays in range(0, max_number_of_delays):
+            if BlogData.get_post_by_id(post_id) is None:
+                return
+            time.sleep(delay_per_iteration_ms/1000.0);
+
+    @classmethod
     def add_new_comment(cls, parent_post_id, subject, content, user_name):
         new_comment = Post(parent=cls.get_posts_parent(),
                            subject=subject, content=content,
@@ -118,10 +132,12 @@ class BlogData():
     @classmethod
     def delete_post_by_id(cls, post_id):
         post = cls.get_post_by_id(post_id)
-        for comment_id in post.list_of_comments_ids:
+        list_of_comments_ids = post.list_of_comments_ids
+        post.delete()
+        for comment_id in list_of_comments_ids:
             comment = cls.get_post_by_id(comment_id)
             comment.delete()
-        post.delete()
+
 
     @classmethod
     def set_post_error_message(cls, list_of_posts, post_id, error_message):

@@ -8,10 +8,13 @@ class RecentPostsHandler(Handler):
     current_posts = None
 
     def get(self):
+
         if RecentPostsHandler.current_posts is None:
             posts = RecentPostsHandler.get_list_of_posts_from_database()
         else:
             posts = RecentPostsHandler.current_posts
+
+
 
         self.render("recent_posts.html", posts=posts, logged_in_name=self.get_logged_in_name())
         RecentPostsHandler.current_posts = None

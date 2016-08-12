@@ -4,6 +4,7 @@ from BlogData import BlogData
 import HashLib
 
 
+
 class EditPostHandler(Handler):
     def get(self, post_id):
         post = BlogData.get_post_by_id(post_id)
@@ -22,7 +23,7 @@ class EditPostHandler(Handler):
             return
 
         if delete_post_idx_string.isdigit():
-            BlogData.delete_post_by_id(delete_post_idx_string)
+            BlogData.delete_post_by_id_with_confirmation(delete_post_idx_string)
             self.redirect("/recentposts")
             return
 
