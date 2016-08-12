@@ -4,7 +4,6 @@ from BlogData import BlogData
 import HashLib
 
 
-
 class EditPostHandler(Handler):
     def get(self, post_id):
         post = BlogData.get_post_by_id(post_id)

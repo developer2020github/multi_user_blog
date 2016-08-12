@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43380c26-5eab-43c5-8c2a-31adf69de6a9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/BlogData.py" afterPath="$PROJECT_DIR$/sblog/BlogData.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/EditPostHandler.py" afterPath="$PROJECT_DIR$/sblog/EditPostHandler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/RecentPostsHandler.py" afterPath="$PROJECT_DIR$/sblog/RecentPostsHandler.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/static/sblog.css" afterPath="$PROJECT_DIR$/sblog/static/sblog.css" />
     </list>
     <ignored path="p2_multi_user_blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,8 +48,8 @@
       <file leaf-file-name="EditPostHandler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/EditPostHandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="51">
+              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
               <folding>
                 <element signature="e#18#45#0" expanded="true" />
               </folding>
@@ -78,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlogData.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BlogData.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/BlogData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="93" column="25" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="43" />
+            <state relative-caret-position="357">
+              <caret line="99" column="41" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
               <folding>
                 <element signature="e#750#785#0" expanded="true" />
               </folding>
@@ -105,7 +104,7 @@
       <file leaf-file-name="CurrentPostHandler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/CurrentPostHandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="238">
               <caret line="14" column="39" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="49" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
@@ -114,21 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="recent_posts.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="recent_posts.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sblog/templates/recent_posts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_module.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sblog/test_module.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="46" />
+            <state relative-caret-position="170">
+              <caret line="10" column="34" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -158,7 +147,6 @@
         <option value="$PROJECT_DIR$/sblog/templates/add_comment.html" />
         <option value="$PROJECT_DIR$/sblog/templates/current_post.html" />
         <option value="$PROJECT_DIR$/sblog/sblog_main.py" />
-        <option value="$PROJECT_DIR$/sblog/templates/recent_posts.html" />
         <option value="$PROJECT_DIR$/sblog/app.yaml" />
         <option value="$PROJECT_DIR$/sblog/static/sblog.css" />
         <option value="$PROJECT_DIR$/sblog/templates/main.html" />
@@ -170,8 +158,9 @@
         <option value="$PROJECT_DIR$/sblog/NewCommentHandler.py" />
         <option value="$PROJECT_DIR$/sblog/templates/edit_post.html" />
         <option value="$PROJECT_DIR$/sblog/RecentPostsHandler.py" />
-        <option value="$PROJECT_DIR$/sblog/EditPostHandler.py" />
         <option value="$PROJECT_DIR$/sblog/BlogData.py" />
+        <option value="$PROJECT_DIR$/sblog/EditPostHandler.py" />
+        <option value="$PROJECT_DIR$/sblog/templates/recent_posts.html" />
       </list>
     </option>
   </component>
@@ -308,6 +297,12 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Slava\CourseraGood\Udacity\FullStackNanoDegree\projects\p2_multi_user_blog\sblog\templates" />
+      <recent name="C:\Slava\CourseraGood\Udacity\FullStackNanoDegree\projects\p2_multi_user_blog\ref" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.test_module">
     <configuration default="false" name="PostsData" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -532,8 +527,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -586,13 +581,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sblog/SignUpHandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sblog/RecentPostsHandler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -883,24 +871,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sblog/templates/recent_posts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sblog/CurrentPostHandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="39" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sblog/NewPostHandler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -945,23 +915,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sblog/BlogData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="99" column="41" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
+          <folding>
+            <element signature="e#750#785#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ref/recent_posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sblog/EditPostHandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="51">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
           <folding>
             <element signature="e#18#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sblog/BlogData.py">
+    <entry file="file://$PROJECT_DIR$/sblog/CurrentPostHandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="93" column="25" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="43" />
+        <state relative-caret-position="238">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="49" />
           <folding>
-            <element signature="e#750#785#0" expanded="true" />
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sblog/templates/recent_posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
