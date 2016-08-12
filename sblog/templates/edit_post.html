@@ -24,22 +24,26 @@
             <input type="text" class="post-subject" name="subject" value="{{post.subject}}">
         </label>
         <label>
-
                    <div  class="new-post-headline">Post:</div>
                     <textarea name="content" class="post-content" >{{post.content}}</textarea>
-
         </label>
-        <span><input class ="like-unlike-button" type="submit"></span>
+        <span><input id="edit-post-submit-form-button" class ="inlined-button" type="submit" value="Submit edits"></span>
+        <button class="inlined-button" id="delete-post-button" type="button">Delete post</button>
+        <button class="inlined-button" id="back-to-edit-delete-page-button" type="button">Back to edit/delete page</button>
         <span>    
         <form action="" method="post">
-        <input type="hidden" name="delete_post_idx" value={{post.key().id()}}>
-        <input class ="like-unlike-button" type="submit" value="Delete" />
-    </form>
+            <input type="hidden" name="delete_post_idx" value={{post.key().id()}}>
+            <input id="delete-post-confirm-submit-button" class ="inlined-button" type="submit" value="Confirm deletion" />
+        </form>
         </span>
+       
+        </form>
+
     </form>
  
      <div class="error">{{error}}</div>
     </div>
+<script src="/static/edit_delete.js"></script>
 </body>
 
 </html>
