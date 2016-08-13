@@ -1,34 +1,42 @@
-<!DOCTYPE html>
-<html>
 
-<head lang="en">
-    <title>New comment</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" rel="stylesheet" href="/static/sblog.css" />
-</head>
+{% extends "posts_base.html" %}
+{% block title %}s-blog new comment{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
 
-<body>
-    <div class="header-with-username">
-        <span class="left-header">S-blog</span>
-        <span class="center-header"></span>
-        <span class="right-header">logged in as {{logged_in_name}}</span>
-    </div>
-    <div class="recent-post-box-full-witdth">
+{%block left_header %}
+{{super()}}
+{% endblock %}
+
+{%block right_header %}
+        {{ super() }}
+        <a class="link-button-low" href="/newpost">Add new post</a>
+        <a class="link-button-low" href="/logout">Log out</a>
+{% endblock %}
+
+{% block center_header %}
+Add new comment
+{% endblock %}
+
+
+{% block content %}
+    <div class="post-box">
         <div class="recent-post-subject">{{post.subject}}</div>
         <div class="post-date-and-author">
             <span class="post-date">{{post.created_formatted}}</span>
             <span class="post-author">By {{post.user_name}}</span>
         </div>
         <hr>
-        <div class=post-text>
+        <div>
             <p>{{post.content}}</p>
         </div>
     </div>
     <div>
-        <h3>New comment:</h3>
+        
         <form method="post">
             <label>
-                <div class="new-post-headline">Subject:</div>
+                <h3>Comment subject:</h3>
                 <input type="text" class="post-subject" name="subject">
             </label>
             <label>
@@ -39,6 +47,4 @@
         </form>
         <div class="error">{{error}}</div>
     </div>
-</body>
-
-</html>
+{% endblock %}
