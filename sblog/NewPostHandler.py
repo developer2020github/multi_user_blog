@@ -5,6 +5,11 @@ import HashLib
 
 class NewPostHandler(Handler):
     def get(self):
+
+        user_name = HashLib.get_secure_cookie_value(self, "user_id")
+        if user_name is None:
+            self.redirect("/login")
+
         self.render("new_post.html", logged_in_name=self.get_logged_in_name())
 
 
@@ -14,6 +19,7 @@ class NewPostHandler(Handler):
         user_name = HashLib.get_secure_cookie_value(self, "user_id")
         if user_name is None:
             self.redirect("/login")
+            return
 
         if subject and content:
             post = BlogData.add_new_post(subject, content, user_name)

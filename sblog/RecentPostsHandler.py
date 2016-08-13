@@ -14,8 +14,6 @@ class RecentPostsHandler(Handler):
         else:
             posts = RecentPostsHandler.current_posts
 
-
-
         self.render("recent_posts.html", posts=posts, logged_in_name=self.get_logged_in_name())
         RecentPostsHandler.current_posts = None
 

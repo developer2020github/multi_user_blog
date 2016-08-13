@@ -84,6 +84,13 @@ a:visited,
     display: inline-block;
 }
 
+.submit-button, 
+.link-button-form, 
+.login-user-input{
+    box-sizing: border-box;
+    width: 250px;
+}
+
 .form-input-tag-separate {
     width: 10em;
     display: inline-block;

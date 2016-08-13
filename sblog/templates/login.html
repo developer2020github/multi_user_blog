@@ -12,11 +12,11 @@
     <form method="post">
         <div>
             <span class="form-input-tag">Username:</span>
-            <input type="text" name="username"><span>{{username_error_message}}</span>
+            <input class="login-user-input" type="text" name="username"><span>{{username_error_message}}</span>
         </div>
         <div>
             <span class="form-input-tag">Password:</span>
-            <input type="password" name="password"><span>{{password_error_message}}</span>
+            <input class="login-user-input" type="password" name="password"><span>{{password_error_message}}</span>
         </div>
         <div>
             <span class="form-input-tag"></span>
@@ -26,6 +26,10 @@
             {{error}}
         </div>
     </form>
+    <div class="form-separate-input">
+            <span class="form-input-tag-separate">Do not have user name?</span>
+            <span><a class="link-button-form" href="/signeup">Sign up</a></span>
+    </div>
 </body>
 
 </html>
