@@ -10,13 +10,28 @@ a:link {
     color: #07E60C;
 }
 
-a:visited {
+a:visited,
+.link-button, 
+.link-button-low,
+.submit-button,
+.submit-new-post-button,
+.link-button-form,
+.inlined-button {
     color: #F6F86D;
 }
 
+
+.link-button, 
+.link-button-low,
+.submit-button,
+.submit-new-post-button,
+.link-button-form,
+.inlined-button{
+   background-color: #928E8E;
+}
+
 .link-button, .link-button-low{
-    background-color: #928E8E;
-    color: #F6F86D;
+    
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
@@ -52,9 +67,7 @@ a:visited {
 }
 
 .submit-button,
-.submit-new-post-button {
-    background-color: #928E8E;
-    color: #F6F86D;
+.submit-new-post-button{
     padding: 5px 66px;
     text-align: center;
     text-decoration: none;
@@ -64,9 +77,7 @@ a:visited {
     cursor: pointer;
 }
 
-.link-button-form {
-    background-color: #928E8E;
-    color: #F6F86D;
+.link-button-form{
     padding: 5px 66px;
     text-align: center;
     text-decoration: none;
@@ -168,8 +179,6 @@ a:visited {
 }
 
 .inlined-button{
-    background-color: #928E8E;
-    color: #F6F86D;
     padding: 5px 5px;
     text-align: center;
     text-decoration: none;
