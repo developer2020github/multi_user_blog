@@ -1,27 +1,26 @@
-<!DOCTYPE html>
-<html>
+{% extends "posts_base.html" %}
+{% block title %}s-blog recent posts{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
 
-<head lang="en">
-    <title>Current post</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" rel="stylesheet" href="/static/sblog.css" />
-</head>
+{%block left_header %}
+{{super()}}
+{% endblock %}
 
-<body>
-
-    <div class="header-recent-posts">
-        <span class="left-header">S-blog</span>
-        <span class="center-header"></span>
-        <span class="right-header">
-        logged in as {{logged_in_name}}
+{%block right_header %}
+        {{ super() }}
         <a class="link-button-low" href="/recentposts">Recent posts</a>
         <a class="link-button-low" href="/newpost">Add new post</a>
         <a class="link-button-low" href="/logout">Log out</a>
-        </span>
-    </div>
+{% endblock %}
 
+{% block center_header %}
+{% endblock %}
 
-    <div class="recent-post-box">
+{% block content%} 
+
+<div class="post-box">
      
 <div class="recent-post-subject">{{post.subject}}</div>
         <div class="post-date-and-author">
@@ -38,7 +37,7 @@
 <div class="comments-title">{{comments_title}}</div>
 
 {% for comment in comments %}
-<div class="recent-post-box">
+<div class="post-box">
      
 <div class="recent-post-subject">Comment: {{comment.subject}}</div>
         <div class="post-date-and-author">
@@ -53,6 +52,4 @@
 
 {% endfor %}
 
-</body>
-
-</html>
+{% endblock %}
