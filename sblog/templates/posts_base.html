@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+{% block head %}
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="/static/sblog.css"/>
+{% endblock %}
+</head>
+
+<body>
+<div class="container">
+    <div class="header-recent-posts">
+    <span class="left-header">
+    {%block left_header %}S-Blog{% endblock %}
+    </span>
+    
+    <span class="right-header">
+        {% block right_header %}
+        Welcome {{logged_in_name}}
+        {% endblock %}
+    </span>
+
+    </div>
+
+<div class="center-header">
+{% block center_header %}
+{% endblock %}
+</div>
+
+{% block content%}
+ 
+{%endblock%}
+    </div>
+  
+</body>
+
+</html>

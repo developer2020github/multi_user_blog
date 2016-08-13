@@ -139,7 +139,7 @@ a:visited {
     text-align: center;
 }
 
-.recent-post-box, .recent-post-box-full-witdth{
+.post-box, .recent-post-box-full-witdth{
     background: #282525;
     color: #F5EFA7;
     margin-bottom: 18px;

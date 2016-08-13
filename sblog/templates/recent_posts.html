@@ -1,28 +1,29 @@
-<!DOCTYPE html>
-<html>
+{% extends "posts_base.html" %}
+{% block title %}s-blog recent posts{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
 
-<head>
-    <title>s-blog recent posts</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" rel="stylesheet" href="/static/sblog.css" />
-</head>
+{%block left_header %}
+{{super()}}
+{% endblock %}
 
-<body>
-<div class="container">
-    <div class="header-recent-posts">
-        <span class="left-header">S-blog</span>
-        
-        <span class="right-header">
-        logged in as {{logged_in_name}}
+{%block right_header %}
+        {{ super() }}
         <a class="link-button-low" href="/newpost">Add new post</a>
         <a class="link-button-low" href="/logout">Log out</a>
-        </span>
-    </div>
-<div class="center-header">Recent Posts</div>
-    {% for post in posts %}
-<div class="recent-post-box">
-     
+{% endblock %}
 
+{% block center_header %}
+Recent Posts 
+{% endblock %}
+
+
+{% block content%} 
+
+   {% for post in posts %}
+<div class="post-box">
+     
 
 <div class="recent-post-subject">{{post.subject}}</div>
         <div class="post-date-and-author">
@@ -53,7 +54,6 @@
         <div class="error">{{post.error_message}}</div>
     </div>
     {% endfor %}
-    </div>
-</body>
 
-</html>
+
+{% endblock%} 
