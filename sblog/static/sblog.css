@@ -79,45 +79,40 @@ a:visited {
     vertical-align: bottom;
 }
 
-.header-with-username, .header-recent-posts{
-    width: 100%;
-    margin-bottom: 10px;
+.container{
     display: flex;
-}
-
-.header-recent-posts{
+    flex-direction: column;
     width: 80%;
     margin-left: 10%;
+
 }
+
+.header-with-username, .header-recent-posts{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .left-header {
     font-size: 2em;
-    text-align: left;
-    width: 30%;
-    display: inline-block;
 }
 
 
 .center-header {
     font-size: 2em;
     text-align: center;
-    margin: auto;
-    display: inline-block;
 }
 
 .right-header {
-    text-align: right;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 30%;
-    display: inline-block;
 }
 
 
 
 .post-subject,
 .post-content {
-    width: 100%;
     background-color: #282525;
     color: #F5EFA7;
 }
@@ -147,8 +142,6 @@ a:visited {
 .recent-post-box, .recent-post-box-full-witdth{
     background: #282525;
     color: #F5EFA7;
-    width: 80%;
-    margin-left: 10%;
     margin-bottom: 18px;
 }
 

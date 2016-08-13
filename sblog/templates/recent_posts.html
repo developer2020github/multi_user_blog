@@ -8,25 +8,29 @@
 </head>
 
 <body>
+<div class="container">
     <div class="header-recent-posts">
         <span class="left-header">S-blog</span>
-        <span class="center-header">Recent Posts</span>
+        
         <span class="right-header">
         logged in as {{logged_in_name}}
         <a class="link-button-low" href="/newpost">Add new post</a>
         <a class="link-button-low" href="/logout">Log out</a>
         </span>
     </div>
+<div class="center-header">Recent Posts</div>
     {% for post in posts %}
 <div class="recent-post-box">
      
+
+
 <div class="recent-post-subject">{{post.subject}}</div>
         <div class="post-date-and-author">
             <span class="post-date">{{post.created_formatted}}</span>
             <span class="post-author">By {{post.user_name}}</span>
         </div>
         <hr>
-        <div class=post-text>
+        <div>
             <p>{{post.content}}</p>
         </div>
         <hr>
@@ -49,6 +53,7 @@
         <div class="error">{{post.error_message}}</div>
     </div>
     {% endfor %}
+    </div>
 </body>
 
 </html>
