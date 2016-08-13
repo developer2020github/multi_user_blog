@@ -44,11 +44,11 @@ Recent Posts
             <span>{{post.number_of_likes}} likes</span>
             <form class="like-unlike-form" action="" method="post">
                 <input type="hidden" name="liked_post_idx" value={{post.key().id()}}>
-                <input class = "like-unlike-button" type="submit" value="Like" />
+                <input class = "inlined-button" type="submit" value="Like" />
             </form>
             <form class="like-unlike-form" action="" method="post">
                 <input type="hidden" name="unliked_post_idx" value={{post.key().id()}}>
-                <input class = "like-unlike-button" type="submit" value="Unlike" />
+                <input class = "inlined-button" type="submit" value="Unlike" />
             </form>
         </div>
         <div class="error">{{post.error_message}}</div>
