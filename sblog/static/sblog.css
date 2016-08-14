@@ -206,3 +206,7 @@ a:visited,
     margin-left: 10%;
     margin-bottom: 10px;
 }
+
+.error-line{
+    color: #FF3434;
+}
