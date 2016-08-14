@@ -3,12 +3,10 @@ from Handler import Handler
 from BlogData import BlogData
 import HashLib
 
-
 class RecentPostsHandler(Handler):
     current_posts = None
 
     def get(self):
-
         if RecentPostsHandler.current_posts is None:
             posts = RecentPostsHandler.get_list_of_posts_from_database()
         else:
@@ -17,8 +15,7 @@ class RecentPostsHandler(Handler):
         self.render("recent_posts.html", posts=posts, logged_in_name=self.get_logged_in_name())
         RecentPostsHandler.current_posts = None
 
-    def update_likes(self, posts, error_message, post_to_update_idx_string, user_name, likes_counter_function):
-
+    def update_likes(self, posts, error_message, post_to_update_idx_string, user_name, likes_counter_function, u):
         if post_to_update_idx_string.isdigit():
             post_idx = int(post_to_update_idx_string)
             post = BlogData.get_post_by_id(post_idx)
@@ -29,6 +26,10 @@ class RecentPostsHandler(Handler):
                 post.number_of_likes = likes_counter_function(post.number_of_likes)
                 posts[BlogData.get_post_idx_in_a_list(posts, post_idx)] = post
                 post.put()
+                RecentPostsHandler.current_posts = posts
+                # there seems to be s bi tof delay needed to save post to DB, so sometimes if user clicks
+                # on like button page will be re-rendered before databse gets updated,
+                # so use local copy to avoid this.
             return True
 
         return False
@@ -47,15 +48,19 @@ class RecentPostsHandler(Handler):
         liked_post_idx_string = self.request.get("liked_post_idx").strip()
         unliked_post_idx_string = self.request.get("unliked_post_idx").strip()
         posts = RecentPostsHandler.get_list_of_posts_from_database()
-        self.update_likes(posts,  "Error: cannot like your own posts",
-                          liked_post_idx_string, user_name, lambda x: x + 1)
 
-        self.update_likes(posts,  "Error: cannot unlike your own posts",
-                          unliked_post_idx_string, user_name, lambda x: x - 1)
+        updated = self.update_likes(posts,  "Error: cannot like your own posts",
+                          liked_post_idx_string, user_name, lambda x: x + 1, "liked")
+
+        if not updated:
+            self.update_likes(posts,  "Error: cannot unlike your own posts",
+                          unliked_post_idx_string, user_name, lambda x: x - 1, "unliked")
 
         #need to rediect to get to avoid re-submission of post request - we want error message to clear
         #if user refreshes the page
+
         self.redirect("/recentposts")
+        #self.render("recent_posts.html", posts=posts, logged_in_name=self.get_logged_in_name())
 
 
 
