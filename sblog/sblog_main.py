@@ -86,7 +86,7 @@ class MainPageHandler(Handler):
 app = webapp2.WSGIApplication([
     ('/', MainPageHandler), 
     ('/recentposts', RecentPostsHandler),
-    ('/signeup', SignUpHandler),
+    ('/signup', SignUpHandler),
     ("/welcome", WelcomeHandler),
     ("/newpost", NewPostHandler),
     ("/login", LogInHandler),
