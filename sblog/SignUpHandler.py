@@ -44,6 +44,8 @@ class SignUpHandler(Handler):
             return
 
         # add user to database, set the cookie and redirect
+        if email != "" and (not self.email_string_ok(email, "email_error_message", "signup.html")):
+            return
 
         BlogData.add_new_user(username, password, email)
         self.response.headers.add_header("Set-Cookie", "user_id=%s" % str(HashLib.make_secure_cookie(username)))

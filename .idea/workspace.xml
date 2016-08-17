@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43380c26-5eab-43c5-8c2a-31adf69de6a9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/Handler.py" afterPath="$PROJECT_DIR$/sblog/Handler.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/SignUpHandler.py" afterPath="$PROJECT_DIR$/sblog/SignUpHandler.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/templates/signup.html" afterPath="$PROJECT_DIR$/sblog/templates/signup.html" />
     </list>
     <ignored path="p2_multi_user_blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,21 +34,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_module.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test_module.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/test_module.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="signup.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sblog/templates/signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="41" selection-start-line="35" selection-start-column="7" selection-end-line="38" selection-end-column="14" />
+            <state relative-caret-position="214">
+              <caret line="26" column="119" selection-start-line="26" selection-start-column="119" selection-end-line="26" selection-end-column="119" />
               <folding />
             </state>
           </provider>
@@ -89,8 +89,8 @@
       <file leaf-file-name="recent_posts.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/templates/recent_posts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="65">
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -99,8 +99,8 @@
       <file leaf-file-name="SignUpHandler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/SignUpHandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+            <state relative-caret-position="325">
+              <caret line="46" column="73" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -109,8 +109,8 @@
       <file leaf-file-name="Handler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/Handler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            <state relative-caret-position="170">
+              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
               <folding>
                 <element signature="e#126#140#0" expanded="true" />
               </folding>
@@ -140,7 +140,6 @@
         <option value="$PROJECT_DIR$/sblog/templates/welcome.html" />
         <option value="$PROJECT_DIR$/sblog/SignIn.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/sblog/templates/signup.html" />
         <option value="$PROJECT_DIR$/sblog/UserData.py" />
         <option value="$PROJECT_DIR$/sblog/LogInHandler.py" />
         <option value="$PROJECT_DIR$/sblog/LogOutHandler.py" />
@@ -163,9 +162,10 @@
         <option value="$PROJECT_DIR$/sblog/templates/recent_posts.html" />
         <option value="$PROJECT_DIR$/sblog/WelcomeHandler.py" />
         <option value="$PROJECT_DIR$/sblog/sblog_main.py" />
+        <option value="$PROJECT_DIR$/sblog/test_module.py" />
         <option value="$PROJECT_DIR$/sblog/Handler.py" />
         <option value="$PROJECT_DIR$/sblog/SignUpHandler.py" />
-        <option value="$PROJECT_DIR$/sblog/test_module.py" />
+        <option value="$PROJECT_DIR$/sblog/templates/signup.html" />
       </list>
     </option>
   </component>
@@ -531,7 +531,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1604" height="876" extended-state="1" />
+    <frame x="-8" y="0" width="1604" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16561712" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -861,24 +861,8 @@
         <state relative-caret-position="221">
           <caret line="14" column="39" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="49" />
           <folding>
-            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#0#27#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sblog/templates/current_post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sblog/templates/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="41" selection-start-line="35" selection-start-column="7" selection-end-line="38" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -886,14 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sblog/templates/recent_posts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -914,6 +890,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sblog/templates/current_post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sblog/templates/recent_posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sblog/test_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sblog/Handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding>
+            <element signature="e#126#140#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sblog/RecentPostsHandler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -926,26 +936,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sblog/SignUpHandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+        <state relative-caret-position="325">
+          <caret line="46" column="73" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="80" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sblog/Handler.py">
+    <entry file="file://$PROJECT_DIR$/sblog/templates/signup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding>
-            <element signature="e#126#140#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sblog/test_module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="214">
+          <caret line="26" column="119" selection-start-line="26" selection-start-column="119" selection-end-line="26" selection-end-column="119" />
           <folding />
         </state>
       </provider>
