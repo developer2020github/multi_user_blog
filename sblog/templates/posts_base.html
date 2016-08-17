@@ -18,7 +18,14 @@
     
     <span class="right-header">
         {% block right_header %}
+        {% if logged_in_name %}
         Welcome {{logged_in_name}}
+        <a class="link-button-low" href="/logout">Log out</a>
+        {% else %}
+        Welcome Guest
+        <a class="link-button-low" href="/login">Log in</a>
+        <a class="link-button-low" href="/signup">Sign up</a>
+        {% endif %}
         {% endblock %}
     </span>
 

@@ -48,9 +48,6 @@ class Handler(webapp2.RequestHandler):
 
         return True
 
-    def get_logged_in_name(self, default_name = "Guest"):
+    def get_logged_in_name(self):
         user_name = HashLib.get_secure_cookie_value(self, "user_id")
-        logged_in_name = default_name
-        if user_name is not None:
-            logged_in_name = user_name
-        return logged_in_name
+        return user_name
