@@ -29,20 +29,14 @@ class SignUpHandler(Handler):
         verified_password = self.request.get("verify")
         email = self.request.get("email")
 
-        # check user name and password here
-        #See if user name or password is empty or contains some not allowed characters
-
-        if self.string_is_empty_or_contains_not_allowed_characters(username, "username_error_message",
-                                                                   "user name", "signup.html"):
+        # See if user name is empty or contains some not allowed characters
+        if not self.user_name_string_ok(username, "username_error_message",
+                                        "user name", "signup.html"):
             return
 
         # if user already exists - show a message
         if BlogData.user_exists(username):
             self.render("signup.html", username_error_message="Error: username " + username + "  already exists")
-            return
-
-        if self.string_is_empty_or_contains_not_allowed_characters(password, "password_error_message",
-                                                                   "password", "signup.html"):
             return
 
         if verified_password != password:
