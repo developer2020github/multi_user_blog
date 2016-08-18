@@ -115,7 +115,10 @@ class BlogData():
                            user_name=user_name, number_of_likes=0,
                            number_of_comments=0,
                            parent_post_idx=int(parent_post_id))
+        new_comment.put()
         new_comment.created_formatted = new_comment.created.strftime("%A, %d %B %Y, at %H:%M:%S")
+        new_comment.url = "/recentposts/" + str(new_comment.key().id())
+        new_comment.edit_post_url = "/editpost/" + str(new_comment.key().id())
         new_comment.put()
         parent_post = cls.get_post_by_id(parent_post_id)
         parent_post.list_of_comments_ids.append(new_comment.key().id())
@@ -138,6 +141,7 @@ class BlogData():
     def delete_post_by_id(cls, post_id):
         post = cls.get_post_by_id(post_id)
         list_of_comments_ids = post.list_of_comments_ids
+
         post.delete()
         for comment_id in list_of_comments_ids:
             comment = cls.get_post_by_id(comment_id)
