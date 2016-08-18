@@ -47,7 +47,6 @@ class BlogData():
     @classmethod
     def user_exists(cls, user_name):
         # http://stackoverflow.com/questions/727410/how-do-i-write-to-the-console-in-google-app-engine
-        logging.debug("something I want to log from user_exists")
         q = User.gql("WHERE user_name = " + "'" + user_name + "'")
         user = q.get()
         return user
@@ -82,6 +81,12 @@ class BlogData():
     def get_post_by_id(cls, post_id):
         post = Post.get_by_id(int(post_id), parent=cls.get_posts_parent())
         return post
+
+    @classmethod
+    def post_was_liked_by_user(cls, user_name, post):
+        if user_name in post.list_of_users_that_liked_post:
+            return True
+        return False
 
     @classmethod
     def get_comments_by_post_id(cls, post_id):
@@ -154,6 +159,6 @@ class BlogData():
         if user:
             if HashLib.valid_pw(user_name, password, user.password_hash):
                 return True
-
         return False
+
 

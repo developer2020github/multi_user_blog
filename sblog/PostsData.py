@@ -20,6 +20,7 @@ class Post(db.Model):
     url = db.StringProperty(required=False)
     new_comment_url = db.StringProperty(required=False)
     number_of_likes = db.IntegerProperty(required=True)
+    list_of_users_that_liked_post = db.StringListProperty(required=True)
     error_message = db.StringProperty(required=False, default="")
     number_of_comments = db.IntegerProperty(required=False)
     edit_post_url = db.StringProperty(required=False)

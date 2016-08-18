@@ -22,8 +22,11 @@ class RecentPostsHandler(Handler):
             if post.user_name == user_name:
                 posts[BlogData.get_post_idx_in_a_list(posts, post_idx)].error_message = error_message
                 RecentPostsHandler.current_posts = posts
+            elif BlogData.post_was_liked_by_user(user_name, post):
+                return False
             else:
                 post.number_of_likes = likes_counter_function(post.number_of_likes)
+                post.list_of_users_that_liked_post.append(user_name)
                 posts[BlogData.get_post_idx_in_a_list(posts, post_idx)] = post
                 post.put()
                 RecentPostsHandler.current_posts = posts
