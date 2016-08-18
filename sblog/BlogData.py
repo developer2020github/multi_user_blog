@@ -32,6 +32,7 @@ class BlogData():
     blog_name = "root"
     user_kind = "user"
     post_kind = "post"
+    NO_PARENT_POST =-1
 
     @classmethod
     def get_posts_parent(cls):
@@ -68,7 +69,7 @@ class BlogData():
                         subject=subject, content=content,
                         user_name=user_name, number_of_likes=0,
                         number_of_comments=0,
-                        parent_post_idx=-1)
+                        parent_post_idx=BlogData.NO_PARENT_POST)
         new_post.put()
         new_post.url = "/recentposts/" + str(new_post.key().id())
         new_post.new_comment_url = "/newcomment/" + str(new_post.key().id())
@@ -126,8 +127,6 @@ class BlogData():
         parent_post.put()
         return new_comment
 
-
-
     @classmethod
     def get_post_idx_in_a_list(cls, list_of_posts, post_id):
 
@@ -141,12 +140,15 @@ class BlogData():
     def delete_post_by_id(cls, post_id):
         post = cls.get_post_by_id(post_id)
         list_of_comments_ids = post.list_of_comments_ids
-
+        # if this is a comment - need to update number of comments in parent post
+        if post.parent_post_idx != BlogData.NO_PARENT_POST:
+            parent_post = cls.get_post_by_id(post.parent_post_idx)
+            parent_post.number_of_comments -= 1
+            parent_post.put()
         post.delete()
         for comment_id in list_of_comments_ids:
             comment = cls.get_post_by_id(comment_id)
             comment.delete()
-
 
     @classmethod
     def set_post_error_message(cls, list_of_posts, post_id, error_message):
@@ -154,7 +156,6 @@ class BlogData():
 
         if post_idx is not None:
             list_of_posts[post_idx].error_message = error_message
-
 
     @classmethod
     def user_password_ok(cls, user_name, password):
