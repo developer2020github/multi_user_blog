@@ -31,8 +31,10 @@ Edit/delete
                 <textarea name="content" class="post-content">{{post.content}}</textarea>
             </label>
             <span><input id="edit-post-submit-form-button" class ="inlined-button" type="submit" value="Submit edits"></span>
+            <span id="cancel-edits-button"><a class="link-button-low" href="{{post.edit_post_url}}">Cancel edits</a></span>
             <button class="inlined-button" id="delete-post-button" type="button">Delete post</button>
         </form>
+
         <form action="" method="post">
                 <input type="hidden" name="delete_post_idx" value={{post.key().id()}}>
                 <button class="inlined-button" id="back-to-edit-delete-page-button" type="button">Back to edit/delete page</button>

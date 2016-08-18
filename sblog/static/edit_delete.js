@@ -26,12 +26,14 @@ var delete_confirm_button;
 var go_back_button;
 var edit_submit_button;
 var unconfirmed_delete_button;
+var cancel_edits_button;
 
 
 function unconfirmed_delete_button_click() {
 
     unconfirmed_delete_button.style.display = "none";
     edit_submit_button.style.display = "none";
+    cancel_edits_button.style.display = "none";
     delete_confirm_button.style.display = "inline-block";
     go_back_button.style.display = "inline-block";
 }
@@ -42,6 +44,7 @@ function go_back_button_click() {
     edit_submit_button.style.display = "inline-block";
     delete_confirm_button.style.display = "none";
     go_back_button.style.display = "none";
+    cancel_edits_button.style.display = "inline-block";
 }
 
 function assign_buttons() {
@@ -50,6 +53,7 @@ function assign_buttons() {
     go_back_button = document.getElementById("back-to-edit-delete-page-button");
     edit_submit_button = document.getElementById("edit-post-submit-form-button");
     unconfirmed_delete_button = document.getElementById("delete-post-button");
+    cancel_edits_button  = document.getElementById("cancel-edits-button");
 }
 
 function assign_click_events() {
