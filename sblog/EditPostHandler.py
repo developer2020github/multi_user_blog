@@ -1,10 +1,13 @@
-__author__ = 'sl'
+
 from Handler import Handler
 from BlogData import BlogData
 import HashLib
 
+import time
+
 
 class EditPostHandler(Handler):
+
     def get(self, post_id):
         user_name = HashLib.get_secure_cookie_value(self, "user_id")
         if user_name is None:
@@ -33,6 +36,9 @@ class EditPostHandler(Handler):
         if subject and content:
             post.content = content
             post.subject = subject
+            # if there is no short delay
+            # here - database does not get updated before redirect.
+            time.sleep(50/1000)
             post.put()
             self.redirect('/recentposts/%s' % str(post.key().id()))
         else:
