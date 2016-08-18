@@ -12,7 +12,6 @@ class NewPostHandler(Handler):
 
         self.render("new_post.html", logged_in_name=self.get_logged_in_name())
 
-
     def post(self):
         subject = self.request.get("subject")
         content = self.request.get("content")

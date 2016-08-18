@@ -6,6 +6,10 @@ import HashLib
 
 class EditPostHandler(Handler):
     def get(self, post_id):
+        user_name = HashLib.get_secure_cookie_value(self, "user_id")
+        if user_name is None:
+            self.redirect("/login")
+            
         post = BlogData.get_post_by_id(post_id)
         self.render("edit_post.html", post=post, logged_in_name=self.get_logged_in_name())
 
