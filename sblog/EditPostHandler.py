@@ -38,7 +38,7 @@ class EditPostHandler(Handler):
             post.subject = subject
             # if there is no short delay
             # here - database does not get updated before redirect.
-            time.sleep(50/1000)
+
             post.put()
             self.redirect('/recentposts/%s' % str(post.key().id()))
         else:
