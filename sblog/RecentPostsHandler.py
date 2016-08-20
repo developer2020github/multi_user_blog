@@ -99,6 +99,8 @@ class RecentPostsHandler(Handler):
         :return: None
         """
         user_name = HashLib.check_user_name_cookie(self, "/login")
+        if not user_name:
+            return
 
         liked_post_idx_string = self.request.get("liked_post_idx").strip()
         unliked_post_idx_string = self.request.get("unliked_post_idx").strip()

@@ -21,6 +21,9 @@ class EditPostHandler(Handler):
         """
         user_name = HashLib.check_user_name_cookie(request_object=self,
                                                    redirect_to_in_case_of_error="/login")
+        if not user_name:
+            return
+
         post = BlogData.get_post_by_id(post_id)
         self.render("edit_post.html", post=post, logged_in_name=user_name)
 
@@ -39,6 +42,9 @@ class EditPostHandler(Handler):
         content = self.request.get("content")
         delete_post_idx_string = self.request.get("delete_post_idx").strip()
         user_name = HashLib.check_user_name_cookie(self, "/login")
+        if not user_name:
+            return
+
         post = BlogData.get_post_by_id(post_id)
 
         if user_name != post.user_name:

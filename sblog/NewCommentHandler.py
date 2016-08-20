@@ -21,6 +21,8 @@ class NewCommentHandler(Handler):
         :return: None
         """
         user_name = HashLib.check_user_name_cookie(self, "/login")
+        if not user_name:
+            return
 
         post = BlogData.get_post_by_id(post_id)
         self.render("new_comment.html", post=post,
@@ -39,6 +41,8 @@ class NewCommentHandler(Handler):
         :return: None
         """
         user_name = HashLib.check_user_name_cookie(self, "/login")
+        if not user_name:
+            return
 
         subject = self.request.get("subject")
         content = self.request.get("content")

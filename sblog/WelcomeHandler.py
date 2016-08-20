@@ -21,4 +21,6 @@ class WelcomeHandler(Handler):
         :return: None
         """
         user_name = HashLib.check_user_name_cookie(self, "/signup")
+        if not user_name:
+            return
         self.render("welcome.html", username=user_name)

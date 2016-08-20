@@ -20,6 +20,8 @@ class NewPostHandler(Handler):
         :return: None
         """
         user_name = HashLib.check_user_name_cookie(self, "/login")
+        if not user_name:
+            return
         self.render("new_post.html", logged_in_name=user_name)
 
     def post(self):
@@ -35,6 +37,8 @@ class NewPostHandler(Handler):
         """
 
         user_name = HashLib.check_user_name_cookie(self, "/login")
+        if not user_name:
+            return
 
         subject = self.request.get("subject")
         content = self.request.get("content")
