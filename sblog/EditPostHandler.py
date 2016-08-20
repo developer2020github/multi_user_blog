@@ -49,7 +49,7 @@ class EditPostHandler(Handler):
 
         if user_name != post.user_name:
             error = "Error: you can edit or delete only your own posts"
-            self.render("edit_post.html", post=post, error=error)
+            self.render("edit_post.html", post=post, error=error, logged_in_name=user_name)
             return
 
         if delete_post_idx_string.isdigit():

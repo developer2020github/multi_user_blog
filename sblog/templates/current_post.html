@@ -31,6 +31,22 @@
         <div class=post-text>
             <p>{{post.content}}</p>
         </div>
+         <hr>
+        <div>
+            <span><a href="{{post.url}}">{{post.number_of_comments}} comments</a></span>
+            <span><a href="{{post.new_comment_url}}">add comment</a></span>
+            <span><a href="{{post.edit_post_url}}">edit\delete</a></span>
+
+            <span>{{post.number_of_likes}} likes</span>
+            <form class="like-unlike-form" action="" method="post">
+                <input type="hidden" name="liked_post_idx" value={{post.key().id()}}>
+                <input class = "inlined-button" type="submit" value="Like" />
+            </form>
+            <form class="like-unlike-form" action="" method="post">
+                <input type="hidden" name="unliked_post_idx" value={{post.key().id()}}>
+                <input class = "inlined-button" type="submit" value="Unlike" />
+            </form>
+        </div>
         <div class="error">{{post.error_message}}</div>
     </div>
 
