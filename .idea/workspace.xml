@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43380c26-5eab-43c5-8c2a-31adf69de6a9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/sblog_main.py" afterPath="$PROJECT_DIR$/sblog/sblog_main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sblog/SignUpHandler.py" afterPath="$PROJECT_DIR$/sblog/SignUpHandler.py" />
     </list>
     <ignored path="p2_multi_user_blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,16 +44,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostsData.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sblog/PostsData.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RecentPostsHandler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/RecentPostsHandler.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -66,13 +56,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sblog_main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sblog_main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/sblog_main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="214">
               <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
               <folding>
                 <element signature="e#141#155#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignUpHandler.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sblog/SignUpHandler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <folding>
+                <element signature="e#55#82#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,8 +103,8 @@
       <file leaf-file-name="datastore_ref.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sblog/datastore_ref.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="66" column="19" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
+            <state relative-caret-position="537">
+              <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -159,7 +161,6 @@
         <option value="$PROJECT_DIR$/sblog/templates/main.html" />
         <option value="$PROJECT_DIR$/sblog/templates/login.html" />
         <option value="$PROJECT_DIR$/sblog/WelcomeHandler.py" />
-        <option value="$PROJECT_DIR$/sblog/SignUpHandler.py" />
         <option value="$PROJECT_DIR$/sblog/templates/signup.html" />
         <option value="$PROJECT_DIR$/sblog/templates/new_post.html" />
         <option value="$PROJECT_DIR$/sblog/templates/new_comment.html" />
@@ -181,8 +182,9 @@
         <option value="$PROJECT_DIR$/sblog/PostsData.py" />
         <option value="$PROJECT_DIR$/sblog/BlogData.py" />
         <option value="$PROJECT_DIR$/sblog/RecentPostsHandler.py" />
-        <option value="$PROJECT_DIR$/sblog/datastore_ref.txt" />
         <option value="$PROJECT_DIR$/sblog/sblog_main.py" />
+        <option value="$PROJECT_DIR$/sblog/datastore_ref.txt" />
+        <option value="$PROJECT_DIR$/sblog/SignUpHandler.py" />
       </list>
     </option>
   </component>
@@ -760,13 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sblog/SignUpHandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="46" column="73" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sblog/templates/signup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -986,20 +981,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sblog/datastore_ref.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="66" column="19" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sblog/sblog_main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
           <folding>
             <element signature="e#141#155#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sblog/datastore_ref.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sblog/SignUpHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding>
+            <element signature="e#55#82#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,29 +1,41 @@
+""" This module contains handler for signup page
+"""
+
+
 from Handler import Handler
 from BlogData import BlogData
 import HashLib
 
-'''
-1. Check if user name and password are ok - i.e. first and second passwords match,
-username is not empty, etc.
-
-2. if it is ok
-- add a reecord to users database
-  - user name : hash_of_password, salt
-
-where hash_of_password = h(pwd +salt)
-
-- make secure cookie out of username
-  redirect to welcome page
-  welcome page should use cookie to get user name
-'''
-
 
 class SignUpHandler(Handler):
+    """
+    Sign up page class handler
+    """
 
     def get(self):
+        """
+        Renders signup page
+        :return: None
+        """
         self.render("signup.html")
 
     def post(self):
+        """
+        Processes new user registration post request.
+        Performs error checks:
+         - if user name already exists
+         - if password string matches verify password string
+         - if user name and email (email is optional)
+            are valid (i.e match corresponding
+            validation regex)
+        If there is an error - page will be re-rendered
+        with an error message to the user.
+        Otherwise, user will be adeed to the
+        database, method will set
+        cookie for current user and
+        redirect to Welcome page.
+        :return:
+        """
         username = self.request.get("username")
         password = self.request.get("password")
         verified_password = self.request.get("verify")
@@ -36,11 +48,13 @@ class SignUpHandler(Handler):
 
         # if user already exists - show a message
         if BlogData.user_exists(username):
-            self.render("signup.html", username_error_message="Error: username " + username + "  already exists")
+            error_message = "Error: username " + username + "  already exists"
+            self.render("signup.html", username_error_message=error_message)
             return
 
         if verified_password != password:
-            self.render("signup.html", verify_password_error_message="Error: passwords do not match")
+            error_message = "Error: passwords do not match"
+            self.render("signup.html", verify_password_error_message=error_message)
             return
 
         # add user to database, set the cookie and redirect
@@ -48,6 +62,6 @@ class SignUpHandler(Handler):
             return
 
         BlogData.add_new_user(username, password, email)
-        self.response.headers.add_header("Set-Cookie", "user_id=%s" % str(HashLib.make_secure_cookie(username)))
-
+        self.response.headers.add_header("Set-Cookie", "user_id=%s" %
+                                         str(HashLib.make_secure_cookie(username)))
         self.redirect("/welcome")
