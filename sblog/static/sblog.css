@@ -210,3 +210,8 @@ a:visited,
 .error-line{
     color: #FF3434;
 }
+
+.container-center{
+    display: table;
+    margin: 0 auto;
+ }
