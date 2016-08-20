@@ -16,7 +16,7 @@ class NewCommentHandler(Handler):
         Checks if user name cookie is valid.
         If yes-renders new comment page,
         otherwise redirects to login page
-         (via libary function check_user_name_cookie)
+         (via library function check_user_name_cookie)
         :param post_id: ID of the post comment will be added to
         :return: None
         """
