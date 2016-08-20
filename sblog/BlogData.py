@@ -280,3 +280,14 @@ class BlogData:
             if HashLib.valid_pw(user_name, password, user.password_hash):
                 return True
         return False
+
+    @classmethod
+    def get_list_of_recent_posts_from_database(cls, number_of_posts=10):
+        """
+        Gets list of posts to display from the database
+        :return: list of 10 most recent posts from the database.
+        """
+        query = "SELECT * FROM Post WHERE parent_post_idx =-1 ORDER BY created DESC LIMIT " \
+                + str(number_of_posts)
+        list_of_posts = list(db.GqlQuery(query))
+        return list_of_posts
