@@ -5,6 +5,7 @@ for current post page
 
 from Handler import Handler
 from BlogData import BlogData
+import HashLib
 
 
 class CurrentPostHandler(Handler):
@@ -27,4 +28,4 @@ class CurrentPostHandler(Handler):
         self.render("current_post.html",
                     post=post, comments=comments,
                     comments_title=comments_title,
-                    logged_in_name=self.get_logged_in_name())
+                    logged_in_name=HashLib.get_secure_cookie_value(self, "user_id"))

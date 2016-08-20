@@ -6,7 +6,6 @@ import os
 import re
 import webapp2
 import jinja2
-import HashLib
 
 
 class Handler(webapp2.RequestHandler):
@@ -99,11 +98,3 @@ class Handler(webapp2.RequestHandler):
             return False
 
         return True
-
-    def get_logged_in_name(self):
-        """
-        Checks user name cookie
-        :return: user name if cookie is o'k, None otherwise
-        """
-        user_name = HashLib.get_secure_cookie_value(self, "user_id")
-        return user_name
