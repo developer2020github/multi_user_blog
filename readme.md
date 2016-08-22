@@ -1,8 +1,7 @@
 
 ##Project title
 ######[S-blog](https://sblog-1372.appspot.com)
-Author: developer2020 (<dev276236@gmail.com> )
-
+Author: developer2020 (<dev276236@gmail.com> )  
 2016
 
 ##Project overview
@@ -26,12 +25,12 @@ is fully supported as would be expected for this kind of application (example: u
 To check out S-blog please visit following [link](https://sblog-1372.appspot.com).
 You can also get the application source code and run it locally.
 To do so:
-1. Install Python 2.7
-2. Install Google App Engine SDK (Python)
-3. Start Google APP Engine Launcher
-4. Add s-blog as exisiting applciation
-5. Run it
-6. Navigate to local host at the port you selected
+1. Install Python 2.7  
+2. Install Google App Engine SDK (Python)  
+3. Start Google APP Engine Launcher  
+4. Add s-blog as exisiting applciation  
+5. Run it  
+6. Navigate to local host at the port you selected   
 (example: if port is 8080 - link will be http://localhost:8080/)
 #####Note:
 if you have more than one version of Python installed, Applicatiooin Launher may select wrong version by default, which will result in error at an attempt to launsh the applciation.
