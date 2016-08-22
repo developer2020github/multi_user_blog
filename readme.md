@@ -34,4 +34,4 @@ To do so:
 (example: if port is 8080 - link will be http://localhost:8080/)
 #####Note:
 if you have more than one version of Python installed, Applicatiooin Launher may select wrong version by default, which will result in error at an attempt to launsh the applciation.
-To fix this, navigate to Edit->Prefernces and make sure correct version of Python (2.7) is selected in "Python path" field.
+To fix this, navigate to Edit->Preferences and make sure correct version of Python (2.7) is selected in "Python path" field.
