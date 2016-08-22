@@ -31,7 +31,9 @@ Recent Posts
         </div>
         <hr>
         <div>
-            <p>{{post.content}}</p>
+            {% for line in post.content.splitlines() %}
+                {{line}}<br>
+            {% endfor %}
         </div>
         <hr>
         <div>
