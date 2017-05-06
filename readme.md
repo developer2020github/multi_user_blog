@@ -1,17 +1,17 @@
 
-##Project title
-######[S-blog](https://sblog-1372.appspot.com)
+## Project title
+###### [S-blog](https://sblog-1372.appspot.com)
 Author: developer2020 (<dev276236@gmail.com> )  
 2016
 
-##Project overview
+## Project overview
 S-blog is a personal project,  designed and implemented by  developer2020 (<dev276236@gmail.com> ).
 S-blog is a multiuser blog, supporiting postings and commenting by multiple users.
 Users can edit/delete/like/displike posts/comments. User registration/log in functionality
 is fully supported as would be expected for this kind of application (example: users can edit/delete only posts they created, etc.)
 
 
-##Built with (libraries/technologies/APIs used)
+## Built with (libraries/technologies/APIs used)
 
 * Google App Engine SDK (Python)
 * Jinja2 template engine
@@ -20,7 +20,7 @@ is fully supported as would be expected for this kind of application (example: u
 
 
 
-####Installing and running application
+#### Installing and running application
 
 To check out S-blog please visit following [link](https://sblog-1372.appspot.com).
 You can also get the application source code and run it locally.
